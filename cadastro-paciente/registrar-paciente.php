@@ -1,4 +1,6 @@
 <?php 
+        // Adiciona o paciente ao banco de dados
+
         include "../php/conexao.php";
 
         $nome = $_POST['nome'];
@@ -13,6 +15,8 @@
         $logradouro = $_POST['log'];
         $cidade = $_POST['cidade'];
         $estado = $_POST['estado'];
+
+        // Script sql p/ adicionar os dados vindos do formulário
     
         $query = "INSERT INTO pacientes(nome, nascimento, estado_civil, sexo, cpf, rg, plano, senha, historico, logradouro, cidade, estado)".
                  "VALUES('$nome', '$nascimento', '$estado_civil', '$sexo', '$cpf', '$rg', '$plano', '$senha', '$historico','$logradouro',". 
