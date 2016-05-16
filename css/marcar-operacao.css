@@ -39,8 +39,6 @@ img#logo{
     margin: 10px 0px 0px 120px;
 }
 
-
-
 form#colaborador{
     width: 690px;
     margin: -5px 10px 0px 350px;
@@ -84,4 +82,9 @@ form input#logar{
 fieldset{
     margin: 50px auto;
     width: 710px;
+}
+
+#bt-marcar{
+    padding: 8px;
+    border-radius: 2px;
 }

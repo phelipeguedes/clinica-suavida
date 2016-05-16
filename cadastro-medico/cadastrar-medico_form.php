@@ -1,8 +1,11 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
-<meta charset="utf-8" />
-    <title>Clínica Sua Vida</title>
+	
+	<!-- Página que contém o formulário p/ o cadastro de pacientes -->
+
+	<meta charset="utf-8" />
+    <title>Cadastro de Médicos</title>
     <link rel="stylesheet" type="text/css" href="../css/cadastrar_medico.css" />
     <script src="../javascript/funcoes.js"></script>
 </head>
@@ -21,7 +24,7 @@
 					<li><a href="../guia-medico.html">Guia Médico</a></li>
 					<li><a href="cadastrar-medico_login.html">Cadastrar Médico</a></li>
 					<li><a href="../cadastro-paciente/cadastrar-paciente_login.html">Cadastrar Paciente</a></li>
-					<li><a href="../procedimentos.html">Procedimentos</a></li>
+					<li><a href="../marcacao-procedimentos/procedimentos.html">Procedimentos</a></li>
 				</ul>
 			</nav>
 			<img src="../imagens/logo.jpg" id="logo" />
@@ -37,7 +40,9 @@
 		
         <h4>Seção destinada ao cadastro, alteração e/ou exclusão de	médicos</h4>
         
-		<form name="formulario" action="cadastro-medico.php" method="post" id="formulario">
+        <!-- Envia os dados preenchidos p/ 'registrar-paciente.php ' -->
+
+		<form name="formulario" action="registrar-medico.php" method="post" id="formulario">
 			<fieldset id="cadastrar_medico">
 
 				<label class="lblcadastro">Nome:<input type="text"

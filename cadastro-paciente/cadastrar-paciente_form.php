@@ -2,8 +2,11 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
-<meta charset="utf-8" />
-<title>Cadastro de Pacientes</title>
+
+	<!-- Página que contém o formulário p/ o cadastro de pacientes -->
+
+	<meta charset="utf-8" />
+	<title>Cadastro de Pacientes</title>
     <link rel="stylesheet" type="text/css" href="../css/cadastrar_paciente.css" />
     <script src="../javascript/funcoes.js"></script>
 </head>
@@ -20,25 +23,11 @@
 					<li><a href="../guia-medico.html">Guia Médico</a></li>
 					<li><a href="../cadastro-medico/cadastrar-medico_login.html">Cadastrar Médico</a></li>
 					<li><a href="cadastrar-paciente_login.html">Cadastrar Paciente</a></li>
-					<li><a href="../procedimentos.html">Procedimentos</a></li>
+					<li><a href="../marcacao-procedimentos/procedimentos.html">Procedimentos</a></li>
 				</ul>
 			</nav>
 			<img src="../imagens/logo.jpg" id="logo" />
             
-            <!--
-			<form action="php/login.php" method="post" id="colaborador">
-				<fieldset id="entrar">
-					<label for="usuario" id="area"><br />Área restrita para<br />&nbsp;&nbsp;colaboradores</label>
-					<input type="text" name="usuario" id="usuario" class="txtusuario"
-						placeholder="usuario" required /> <input type="password"
-						name="senha" id="senha" class="txtusuario" placeholder="senha"
-						required /> <input type="submit" name="logar" id="logar"
-						id="txtusuario" value="entrar" onclick="validarLogin();" /> <a
-						href="cadastro-medico/cadastro-medico_login.html" id="cadastrar" name="cadastrar"
-						class="txtusuario">Cadastre-se</a>
-				</fieldset>
-			</form>
-            -->
             <h4>Cadastro de Pacientes</h4>
             <hr>
 		</header>
@@ -48,8 +37,9 @@
     
 	<div id="cadastro">
 
-		<form action="cadastro-paciente.php" method="post" name="cadastro"
-			id="cadastro">
+		<!-- Envia os dados preenchidos p/ 'registrar-paciente.php ' -->
+
+		<form action="registrar-paciente.php" method="post" name="cadastro" id="cadastro">
 			<fieldset id="dados">
 				<legend>Dados Pessoais</legend>
 				<label class="lblcadastro">Nome:<input type="text"
@@ -104,66 +94,7 @@
 			</fieldset>
 		</form>
 	</div>
-    <!--
-    <footer id="rodape">
-		<hr>
-		<div id="institucional">
-			<h4>INSTITUCIONAL</h4>
-			<ul type="none">
-				<li><a href="#">Sobre a Clínica</a></li>
-				<li><a href="#">Atendimento ao Cliente</a></li>
-				<li><a href="#">Trabalhe Conosco</a></li>
-			</ul>
-		</div>
-
-		<div id="encontrar">
-			<h4>ONDE ENCONTRAR</h4>
-			<h4>Endereços:</h4>
-			<p>
-				Av. dos Cabritos, 500<br /> Centro - CEP: 60150-500<br />
-				Fortaleza-CE
-			</p>
-
-			<p id="endereco2">
-				Av. Brasil, 690<br /> Jardins - CEP: 60700-310<br /> Fortaleza-CE
-			</p>
-
-			<p id="endereco3">
-				Av. das Camélias, 1020<br /> Rosas - CEP: 60900-900 Fortaleza-CE
-			</p>
-		</div>
-
-		<div id="atendimento">
-			<ul type="none">
-				<h4>ATENDIMENTO</h4>
-				<h4>Telefones:</h4>
-				<li>(85)3030.4055 (Av. dos Cabritos)</li>
-				<br />
-				<li>(85)3030.5070 (Av. das Camélias)</li>
-				<br />
-				<li>(85)3030.4455 (Av. Brasil)</li>
-				<br />
-			</ul>
-			<ul type="none" class="online">
-				<h4>On-line:</h4>
-				<li><a href="#">Chat On-line</a></li>
-				<li><a href="#">Deficientes Auditivos</a></li>
-				<li><a href="#">Perguntas Frequentes</a></li>
-				<li><a href="#">Fale Conosco</a></li>
-			</ul>
-		</div>
-
-		<div id="conectar">
-			<ul type="none">
-				<h4>SOCIAL</h4>
-				<h4>Conecte-se:</h4>
-				<br>
-				<img src="imagens/social.png" />
-			</ul>
-		</div>
-
-	</footer>
-    -->
+    
 </body>
 </html>
 

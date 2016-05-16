@@ -1,11 +1,17 @@
 <!DOCTYPE html>
 <html>
 <head>
+    
+    <!-- Uma vez que o usuário tem um login correto, esta página o redireciona para o cadastro de médicos -->
+
     <meta charset="utf-8"/>
-    <title>Clínica Sua Vida</title>
+    <title>Cadastro de Médicos</title>
     <script type="text/javascript">
+
+        // Funções que verificam se o login é válido. A 1ª função redireciona p/ o cadastro, a 2ª p/ a página de login novamente 
+
         function cadastrar(){
-            setTimeout("window.location='cadastrar-medico.php'", 2000);
+            setTimeout("window.location='cadastrar-medico_form.php'", 2000);
         }
         function loginErrado(){            
             setTimeout("window.location='cadastrar-medico_login.html'");
@@ -14,7 +20,10 @@
     </script>
 </head>
 <body>
-    <?php          
+
+    <!-- Faz a consulta no banco c/ os dados de usuário e senha fornecidos no campo de login -->
+
+<?php          
      
      $usuario = $_POST['usuario'];
      $senha = $_POST['senha'];
@@ -22,7 +31,9 @@
      $sql = ("SELECT *FROM medicos WHERE login = '$usuario' AND senha = '$senha' ");
      $consulta = mysqli_query($conecte, $sql) or die('Erro!');
      $row = mysqli_num_rows($consulta);
-              
+     
+     // Se uma linha, com as informações do usuário, for encontrada no banco; a função 'cadastrar' é executada. Senão entra em ação 'loginErrado'
+
      if($row > 0){
          session_start();
          $_SESSION['login'] = $_POST['usuario'];
