@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="utf-8"/>
+    <title>Marcar Consulta</title>
+    <link rel="stylesheet" type="text/css" href="../css/marcacaoconsulta.css"/>
+</head>
+<body>                  <!-- Menu e campos de login -->
+<div id="interface">
+    <header>
+    <nav id="menu">
+        
+        <ul>            
+            <li><a href="index.html">Home</a></li>    
+            <li><a href="marcacaoconsulta/autenticacao.html">Marcar Consulta</a></li>    
+            <li><a href="guia-medico.html">Guia Médico</a></li>    
+            <li><a href="cadastro-medico.html">Cadastrar Médico</a></li>    
+            <li><a href="../cadastro-paciente/cadastro-paciente.html">Cadastrar Paciente</a></li>    
+            <li><a href="procedimentos.html">Procedimentos</a></li>    
+        </ul>
+    </nav>
+    <img src="../imagens/logo.jpg" id="logo" />    
+        
+        <form action="php/login.php" method="post" id="colaborador">
+            <fieldset>
+                <label for="usuario" id="area"><br/>Área restrita para<br/>&nbsp;&nbsp;colaboradores</label>
+                <input type="text" name="usuario" id="usuario" class="txtusuario" placeholder="usuario"/>
+                <input type="password" name="senha" id="senha" class="txtusuario" placeholder="senha"/>
+                <input type="submit" name="logar" id="logar" id="txtusuario" value="entrar"/>
+                <a href="cadastrarmedico.html" id="cadastrar" name="cadastrar" class="txtusuario">Cadastre-se</a>
+                <!-- <a href="cadastrarmedico.html" id="cadastrar" name="cadastrar">Cadastrar</a>-->
+            </fieldset>
+        </form>        
+    </header>
+</div>    
+<div id="corpo">
+    
+</div>
+</body>
+</html>

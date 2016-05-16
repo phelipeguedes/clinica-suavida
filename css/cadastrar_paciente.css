@@ -1,0 +1,159 @@
+@chaset="UTF-8";
+
+nav#menu{
+    display: block;
+    margin: -10px 0px 0px 200px;
+    font-family: candara;
+    font-size: 13pt;
+    
+}
+
+nav#menu ul{
+    text-transform: uppercase;
+    position: absolute;
+    text-decoration: none;
+}
+
+nav#menu li{
+    display: inline-block;
+    background-color: #b4c82a;
+    padding: 10px;
+    
+}
+
+nav#menu li:hover{
+    background-color: #87CEFA;    
+}
+
+a:link{
+    text-decoration: none;
+    color: black;
+}
+
+a:visited{
+    color: black;
+}
+
+img#logo{
+    margin: 10px 0px 0px 120px;
+}
+
+form#colaborador{
+    width: 690px;
+    margin: -5px 10px 0px 350px;
+    font-family:candara;
+    font-size: 9pt;
+}
+
+form#colaborador label{
+    float: left;
+}
+
+form#colaborador input{    
+    padding: 5px;
+}
+
+form#colaborador input#senha{
+    margin-left: 6px;
+}
+
+form#colaborador a{
+   color: red;
+   padding:1px;
+   margin-bottom: 23px;
+}
+
+form input#logar{
+    width: 70px;
+    margin-left: 8px;
+    border-radius: 2px;
+}
+
+.txtusuario{
+    margin: 15px 0px 0px 20px;
+}
+
+div#cadastro{
+    font-family: candara;
+    border-bottom: 1px darkgray solid;    
+}
+
+h4{
+    font-family: candara;
+}
+
+fieldset#sexo{
+    width: 305px;
+    margin-left: 0px;
+}
+
+.txtpaciente{
+     width: 220px;
+    display: block;
+    padding-bottom: 20px;
+    float: right;
+    margin-right: 380px;
+    
+}
+
+.lblcadastro{
+    display: block;
+    margin-top: 15px;    
+}
+
+span#historico{
+    float: right;
+    margin: -480px 0px 0px 80px;
+}
+
+fieldset#dados{
+    width: 710px;
+    margin: auto 0px 0px 320px;
+    background: url("../imagens/paciente.jpg")no-repeat 97% 97%; 
+}
+
+fieldset#endereco{
+    width: 710px;
+    margin: auto 0px 0px 320px;
+    background: url("../imagens/casa.png")no-repeat 97% 97%;
+}
+
+#botao{
+    padding: 8px;
+    border-radius: 2px;
+}
+
+body{
+    background: url('../imagens/bg2_copia.jpg')no-repeat 35% 10%;
+}
+
+footer#rodape{
+    border-top: 2px darkgray solid;
+    margin:50px 0px 0px 10px;
+    font-family: candara;
+    display: block;
+}
+
+div#institucional li{
+    margin-left: -40px;
+}
+
+div#encontrar{
+    margin: -120px 0px 0px 230px;
+}
+
+div#atendimento{
+    margin: -286px 0px 0px 450px;
+}
+
+div#atendimento .online{
+    margin: -180px 0px 0px 280px;
+}
+
+div#conectar{
+    margin: -180px 0px 0px 950px;
+}
+
+div#conectar img{
+    margin: -30px 0px 0px -60px;
+}

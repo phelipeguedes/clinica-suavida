@@ -1,0 +1,35 @@
+@charset:utf-8;
+
+body{
+    background: url('../imagens/bg1%20-%20Copia.jpg') no-repeat 100% 40%;
+}
+
+nav#menu{
+    display: block;
+    font-family: candara;
+}
+
+nav#menu ul{
+    position: absolute;
+}
+
+nav#menu li{
+    display: block;
+    background-color: aliceblue;
+}
+
+nav#menu li a:hover{
+    background-color: black;
+}
+
+a:link{
+    text-decoration: none;
+}
+
+a:visited{
+    color:blue;
+}
+
+#botao{
+    margin: 280px 0px 0px 37px;
+}

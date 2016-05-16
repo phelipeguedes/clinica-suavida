@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8"/>
+	<title>Marcação de Cirurgias</title>
+	<link rel="stylesheet" type="text/css" href="../css/marcar-operacao.css">
+</head>
+<body>
+	<!-- Menu e campos de login -->
+
+	<div id="interface">
+		<header>
+			<nav id="menu">
+				<ul>
+					<li><a href="../index.html">Home</a></li>
+					<li><a href="../marcacao-consulta/autenticacao.html">Marcar	Consulta</a></li>
+					<li><a href="../guia-medico.html">Guia Médico</a></li>
+					<li><a href="../cadastro-medico/cadastrar-medico_login.html">Cadastrar Médico</a></li>
+					<li><a href="../cadastro-paciente/cadastrar-paciente_login.html">Cadastrar Paciente</a></li>
+					<li><a href="procedimentos.html">Procedimentos</a></li>
+				</ul>
+			</nav>
+			<img src="../imagens/logo.jpg" id="logo" />
+    
+            <h4>Marcar Cirurgias</h4>
+            <hr>
+		</header>
+	</div> 
+
+	<form action="#" id="formulario" method="post">
+			<fieldset>
+				<label id="nome">Nome:<br/><input type="text" name="nome" id="nome_paciente" class="txt" placeholder="Nome completo do paciente" required="" /></label><br/><br/>
+				<label>Tipo de Cirurgia</label><br/>
+					<select class="txt">
+						<option>Selecione o tipo da cirurgia</option>
+						<option value="Cardiaca">Cardíaca</option>
+						<option value="Dermatologica">Dermatológica</option>					
+						<option value="Gastrica">Gástrica</option>
+						<option value="Ortopedica">Ortopédica</option>
+						<option value="Outra">Outra</option>
+					</select><br/><br/>
+
+				<label>Médico Responsável</label><br/>
+					<select class="txt">
+						<option>Selecione o cirurgião</option>
+						<optgroup>
+							<label>Cardiologistas</label>	
+							<option value="Cardiaca">Cardíaca</option>
+						</optgroup>
+						
+						<option value="Dermatologica">Dermatológica</option>					
+						<option value="Gastrica">Gástrica</option>
+						<option value="Ortopedica">Ortopédica</option>
+						<option value="Outra">Outra</option>
+					</select><br/><br/>	
+
+				<label>Tipo Sanguíneo</label><br/>
+					<select class="txt">
+						<option>Selecione o grupo Sanguíneo</option>
+						<option value="A+">A+</option>
+						<option value="A-">A-</option>
+						<option value="B+">B+</option>
+						<option value="B-">B-</option>					
+						<option value="AB+">AB+</option>
+						<option value="AB-">AB-</option>
+						<option value="O+">O+</option>
+						<option value="O-">O-</option>					
+					</select><br/><br/>
+
+				<label>Possui Algum Tipo de Alergia?</label><br/>
+					<select class="txt">
+						<option>Selecione</option>
+						<option value="Sim">Sim</option>
+						<option value="Nao">Não</option>
+					</select><br/><br/>
+
+				<label>Faz uso de Algum Medicamento?</label><br/>
+					<select class="txt">
+						<option>Selecione</option>
+						<option value="Sim">Sim</option>
+						<option value="Nao">Não</option>
+					</select><br/><br/>
+
+				Se sim p/ uma das duas perguntas anteriores,<br/>justifique-a:<br/><br/>
+				<textarea cols="35" rows="10"></textarea><br/><br/>
+				<input type="submit" id="bt-marcar" value="Marcar Cirurgia" />
+			</fieldset>		
+		</form>
+</body>
+</html>

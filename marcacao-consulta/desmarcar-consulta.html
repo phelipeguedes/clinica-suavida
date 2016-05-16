@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8"/>
+	<title>Desmarcar Consulta</title>
+	<link rel="stylesheet" type="text/css" href="../css/desmarcar-consulta.css">
+</head>
+<body>
+
+	<!-- Menu e campos de login -->
+
+	<div id="interface">
+		<header>
+			<nav id="menu">
+				<ul>
+					<li><a href="../index.html">Home</a></li>
+					<li><a href="../marcacao-consulta/autenticacao.html">Marcar	Consulta</a></li>
+					<li><a href="../guia-medico.html">Guia Médico</a></li>
+					<li><a href="cadastrar-medico_login.html">Cadastrar Médico</a></li>
+					<li><a href="../cadastro-paciente/cadastrar-paciente_login.html">Cadastrar Paciente</a></li>
+					<li><a href="../procedimentos.html">Procedimentos</a></li>
+				</ul>
+			</nav>
+			<img src="../imagens/logo.jpg" id="logo" />
+    
+            <h4>Cancelar Consulta</h4>
+            <hr>
+		</header>
+	</div> 
+
+	<form action="desmarcar-consulta.php" id="formulario" method="post">
+		<fieldset>
+			<label id="nome">Nome:&nbsp;&nbsp;<input type="text" name="nome" id="nome_paciente" placeholder="Nome completo do paciente" required="" /></label><br/><br/>
+			<input type="submit" id="bt_pesquisa" value="Desmarcar" />
+		</fieldset>		
+	</form>
+
+</body>
+</html>

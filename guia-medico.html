@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<meta charset="utf-8" />
+    <title>Guia Médico</title>
+    <link rel="stylesheet" type="text/css" href="css/guiamedico.css" />
+    <script src="javascript/funcoes.js"></script> 
+</head>
+<body>
+	
+    <!-- Menu e campos de login -->
+    
+	<div id="interface">
+		<header>
+			<nav id="menu">
+
+				<ul>
+					<li><a href="index.html">Home</a></li>
+					<li><a href="marcacao-consulta/autenticacao.html">Marcar Consulta</a></li>
+					<li><a href="guia-medico.html">Guia Médico</a></li>
+					<li><a href="cadastro-medico/cadastrar-medico_login.html">Cadastrar Médico</a></li>
+					<li><a href="cadastro-paciente/cadastrar-paciente_login.html">Cadastrar Paciente</a></li>
+					<li><a href="procedimentos.html">Procedimentos</a></li>
+				</ul>
+			</nav>
+			<img src="imagens/logo.jpg" id="logo" />
+
+			<form action="php/login.php" method="post" id="colaborador">
+				<fieldset>
+					<label for="usuario" id="area"><br />Área restrita para<br />&nbsp;&nbsp;colaboradores</label>
+					<input type="text" name="usuario" id="usuario" class="txtusuario"
+						placeholder="usuario" required /> <input type="password"
+						name="senha" id="senha" class="txtusuario" placeholder="senha"
+						required /> <input type="submit" name="logar" id="logar"
+						id="txtusuario" value="entrar" onclick="validarLogin();" /> <a
+						href="cadastro-medico/cadastrar-medico_login.html" id="cadastrar" name="cadastrar"
+						class="txtusuario">Cadastre-se</a>					
+				</fieldset>
+			</form>
+		</header>
+	</div>
+    
+    <!-- Subtítulo -->
+	<h4>Guia Médico</h4>
+	<hr>
+	
+    <!-- Imagem de equipe médica -->
+	<img src="imagens/equipe2.jpg" alt="equipe" id="equipe" />
+	
+    <div id="relacao">
+		<p>
+			Veja a relação de médicos que trabalham com a clínica
+			Sua Vida e agende sua consulta/procedimento em um das unidades mais
+			próximas a você. 		    
+        </p><br/>
+	</div>
+
+	<!-- Div com informações dos médicos, especialidades e locais de atendimento -->
+
+	<div id="medicos">
+
+		<p>Dr. Ariosvaldo Clementino - Cardiologista</p>
+		<p>Endereço: Av dos Cabritos, 500</p>
+		<p>Próximo ao Banco do Brasil</p>
+		<p>Bairro: Centro</p>
+		<p>Cidade: Fortaleza</p>
+		<p>Telefone: (85) 3030.4455</p>
+		<p>Email: contato@clinica_suavida.com</p>
+		<br />
+
+		<p>Dr. Vancinildo de Assis - Cardiologista</p>
+		<p>Endereço: Av dos Cabritos, 500</p>
+		<p>Próximo ao Banco do Brasil</p>
+		<p>Bairro: Centro</p>
+		<p>Cidade: Fortaleza</p>
+		<p>Telefone: (85) 3030.4455</p>
+		<p>Email: contato@clinica_suavida.com</p>
+		<br />
+
+		<p>Dra Deuzanira Crispim - Cardiologista</p>
+		<p>Endereço: Av Brasil, 690</p>
+		<p>Próximo ao estadio Bernabeu</p>
+		<p>Bairro: Centro</p>
+		<p>Cidade: Fortaleza</p>
+		<p>Telefone: (85) 3030.4065</p>
+		<p>Email: contato@clinica_suavida.com</p>
+		<br />
+
+		<p>Dr. Imaculada Fransquinha - Cardiologista</p>
+		<p>Endereço: Av das Camélias, 1020</p>
+		<p>Próximo a praça verde</p>
+		<p>Bairro: Rosas</p>
+		<p>Cidade: Fortaleza</p>
+		<p>Telefone: (85) 3030.5070</p>
+		<p>Email: contato@clinica_suavida.com</p>
+		<br />
+
+		<p>Dra. Cambraia Santos - Dermatologista</p>
+		<p>Endereço: Av dos Cabritos, 500</p>
+		<p>Próximo ao Banco do Brasil</p>
+		<p>Bairro: Centro</p>
+		<p>Cidade: Fortaleza</p>
+		<p>Telefone: (85) 3030.4455</p>
+		<p>Email: contato@clinica_suavida.com</p>
+		<br />
+
+		<p>Dra. Gertrudes Damasceno - Dermatogista</p>
+		<p>Endereço: Av dos Cabritos, 500</p>
+		<p>Próximo ao Banco do Brasil</p>
+		<p>Bairro: Centro</p>
+		<p>Cidade: Fortaleza</p>
+		<p>Telefone: (85) 3030.4455</p>
+		<p>Email: contato@clinica_suavida.com</p>
+		<br />
+
+		<p>Dra. Cambraia Santos - Dermatologista</p>
+		<p>Endereço: Av das Camélias, 1020</p>
+		<p>Próximo ao Banco do Brasil</p>
+		<p>Bairro: Rosas</p>
+		<p>Cidade: Fortaleza</p>
+		<p>Telefone: (85) 3030.5070</p>
+		<p>Email: contato@clinica_suavida.com</p>
+		<br />
+
+		<p>Dr. Valfrido Maia - Dermatogista</p>
+		<p>Endereço: Av Brasil, 690</p>
+		<p>Próximo ao estádio Bernabeu</p>
+		<p>Bairro: Jardins</p>
+		<p>Cidade: Fortaleza</p>
+		<p>Telefone: (85) 3030.4455</p>
+		<p>Email: contato@clinica_suavida.com</p>
+		<br />
+
+		<p>Dr. Crisanto Celestino - Gastroenterologista</p>
+		<p>Endereço: Av dos Cabritos, 500</p>
+		<p>Próximo ao Banco do Brasil</p>
+		<p>Bairro: Centro</p>
+		<p>Cidade: Fortaleza</p>
+		<p>Telefone: (85) 3030.4455</p>
+		<p>Email: contato@clinica_suavida.com</p>
+		<br />
+
+		<p>Dr. Jaçanã Sampaio - Gastroenterologista</p>
+		<p>Endereço: Av Brasil, 690</p>
+		<p>Próximo ao estádio Bernabeu</p>
+		<p>Bairro: Centro</p>
+		<p>Cidade: Fortaleza</p>
+		<p>Telefone: (85) 3030.4065</p>
+		<p>Email: contato@clinica_suavida.com</p>
+		<br />
+
+		<p>Dr. José Façanha - Ortopedista</p>
+		<p>Endereço: Av dos Cabritos, 500</p>
+		<p>Próximo ao Banco do Brasil</p>
+		<p>Bairro: Centro</p>
+		<p>Cidade: Fortaleza</p>
+		<p>Telefone: (85) 3030.4455</p>
+		<p>Email: contato@clinica_suavida.com</p>
+		<br />
+
+		<p>Dr. José Façanha - Ortopedista</p>
+		<p>Endereço: Av dos Cabritos, 500</p>
+		<p>Próximo ao Banco do Brasil</p>
+		<p>Bairro: Centro</p>
+		<p>Cidade: Fortaleza</p>
+		<p>Telefone: (85) 3030.4455</p>
+		<p>Email: contato@clinica_suavida.com</p>
+		<br />
+
+		<p>Dr. Francisco Epaminondas - Ortopedista</p>
+		<p>Endereço: Av dos Cabritos, 500</p>
+		<p>Próximo ao Banco do Brasil</p>
+		<p>Bairro: Centro</p>
+		<p>Cidade: Fortaleza</p>
+		<p>Telefone: (85) 3030.4455</p>
+		<p>Email: contato@clinica_suavida.com</p>
+		<br />
+
+		<p>Dr. Marivaldo Marcondes - Ortopedista</p>
+		<p>Endereço: Av Brasil, 690</p>
+		<p>Próximo ao estádio Bernabeu</p>
+		<p>Bairro: Jardins</p>
+		<p>Cidade: Fortaleza</p>
+		<p>Telefone: (85) 3030.4065</p>
+		<p>Email: contato@clinica_suavida.com</p>
+		<br />
+
+		<p>Dr. Amadeu Teobaldo - Ortopedista</p>
+		<p>Endereço: Av Brasil, 690</p>
+		<p>Próximo ao estádio Bernabeu</p>
+		<p>Bairro: Jardins</p>
+		<p>Cidade: Fortaleza</p>
+		<p>Telefone: (85) 3030.4065</p>
+		<p>Email: contato@clinica_suavida.com</p>
+		<br />
+	</div>
+
+	<!-- Rodapé presente em algumas páginas -->
+
+	<footer id="rodape">
+		<div id="institucional">
+			<h4>INSTITUCIONAL</h4>
+			<ul type="none">
+				<li><a href="#">Sobre a Clínica</a></li>
+				<li><a href="#">Atendimento ao Cliente</a></li>
+				<li><a href="#">Trabalhe Conosco</a></li>
+			</ul>
+		</div>
+
+		<div id="encontrar">
+			<h4>ONDE ENCONTRAR</h4>
+			<h4>Endereços:</h4>
+			<p>
+				Av. dos Cabritos, 500<br /> Centro - CEP: 60150-500<br />
+				Fortaleza-CE
+			</p>
+
+			<p id="endereco2">
+				Av. Brasil, 690<br /> Jardins - CEP: 60700-310<br /> Fortaleza-CE
+			</p>
+
+			<p id="endereco3">
+				Av. das Camélias, 1020<br /> Rosas - CEP: 60900-900 Fortaleza-CE
+			</p>
+		</div>
+
+		<div id="atendimento">
+			<ul type="none">
+				<h4>ATENDIMENTO</h4>
+				<h4>Telefones:</h4>
+				<li>(85)3030.4055 (Av. dos Cabritos)</li>
+				<br />
+				<li>(85)3030.5070 (Av. das Camélias)</li>
+				<br />
+				<li>(85)3030.4455 (Av. Brasil)</li>
+				<br />
+			</ul>
+			<ul type="none" class="online">
+				<h4>On-line:</h4>
+				<li><a href="#">Chat On-line</a></li>
+				<li><a href="#">Deficientes Auditivos</a></li>
+				<li><a href="#">Perguntas Frequentes</a></li>
+				<li><a href="#">Fale Conosco</a></li>
+			</ul>
+		</div>
+
+		<div id="conectar">
+			<ul type="none">
+				<h4>SOCIAL</h4>
+				<h4>Conecte-se:</h4>
+				<br>
+				<img src="imagens/social.png" />
+			</ul>
+		</div>
+
+	</footer>
+
+
+</body>
+</html>

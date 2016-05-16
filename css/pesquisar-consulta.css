@@ -1,0 +1,85 @@
+@charset="utf-8";
+
+/* Cabecalho: Menu */
+
+nav#menu{
+    display: block;
+    margin: -10px 0px 0px 200px;
+    font-family: candara;
+    font-size: 13pt;
+    
+}
+
+nav#menu ul{
+    text-transform: uppercase;
+    position: absolute;
+    text-decoration: none;
+}
+
+nav#menu li{
+    display: inline-block;
+    background-color: #b4c82a;
+    padding: 10px;
+    
+}
+
+nav#menu li:hover{
+    background-color: #F1F1F1;    
+}
+
+a:link{
+    text-decoration: none;
+    color: black;
+}
+
+a:visited{
+    color: black;
+}
+
+img#logo{
+    margin: 10px 0px 0px 120px;
+}
+
+/* Subtítulo */
+
+h4{
+    font-family: candara;
+}
+
+div#secao h4{
+    margin-left: 320px;
+}
+
+div#secao{
+    margin-top: 30px;
+}
+
+
+
+.txtusuario{
+    margin: 15px 0px 0px 20px;
+}
+
+body{
+	background: url("../imagens/bracos_abertos.jpg") 30% 20%;
+}
+
+fieldset{
+	margin: 30px auto; 
+	width: 350px;
+	height: 100px;
+}
+
+label#nome{
+	font-family: candara;
+	
+}
+
+input#nome_paciente{
+	padding: 8px;
+	width: 260px;
+}
+
+input#bt_pesquisa{
+	padding: 6px;
+}

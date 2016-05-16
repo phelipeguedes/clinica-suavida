@@ -1,0 +1,88 @@
+@chaset="UTF-8";
+
+/* Cabeçalho: Menu e área de login */
+
+nav#menu{
+    display: block;
+    margin: -10px 0px 0px 200px;
+    font-family: candara;
+    font-size: 13pt;
+    
+}
+
+nav#menu ul{
+    text-transform: uppercase;
+    position: absolute;
+    text-decoration: none;
+}
+
+nav#menu li{
+    display: inline-block;
+    background-color: #b4c82a;
+    padding: 10px;
+    //transition: background-color 1s;
+    
+}
+
+nav#menu li:hover{
+    background-color: #F1F1F1;    
+}
+
+a:link{
+    text-decoration: none;
+    color: black;
+}
+
+a:visited{
+    color: black;
+}
+
+img#logo{
+    margin: 10px 0px 0px 120px;
+}
+
+/* Container com os campos de usuário e senha */
+
+form#colaborador{
+    width: 690px;
+    margin: -5px 10px 0px 350px;
+    font-family:candara;
+    font-size: 9pt;
+}
+
+form#colaborador label{
+    float: left;
+}
+
+form#colaborador input{    
+    padding: 5px;
+}
+
+form#colaborador input#senha{
+    margin-left: 6px;
+}
+
+form#colaborador a{
+    color: red;
+   padding:1px;
+   margin-bottom: 23px;
+}
+
+form input#logar{
+    width: 70px;
+    margin-left: 8px;
+    border-radius: 2px;
+}
+
+/* Classe para os campos de usuario e senha */
+
+.txtusuario{
+    margin: 15px 0px 0px 20px;
+}
+
+/* Imagem do corpo da página ao ser carregada */
+
+body{
+    background: url('../imagens/medico_backgorund02.jpg')100% no-repeat;
+}
+

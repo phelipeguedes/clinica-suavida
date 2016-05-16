@@ -1,0 +1,144 @@
+@chaset="UTF-8";
+
+/* Cabeçalho: Menu e área de login */
+
+nav#menu{
+    display: block;
+    margin: -10px 0px 0px 200px;
+    font-family: candara;
+    font-size: 13pt;
+    
+}
+
+nav#menu ul{
+    text-transform: uppercase;
+    position: absolute;
+    text-decoration: none;
+}
+
+nav#menu li{
+    display: inline-block;
+    background-color: #b4c82a;
+    padding: 10px;
+    
+}
+
+nav#menu li:hover{
+    background-color: #F1F1F1;    
+}
+
+a:link{
+    text-decoration: none;
+    color: black;
+}
+
+a:visited{
+    color: black;
+}
+
+img#logo{
+    margin: 10px 0px 0px 120px;
+}
+
+/* Subtítulo */
+
+#agendamento{
+    font-family: candara;
+}
+
+/* Container com os campos de CPF e senha */ 
+
+div#marcar{
+    border: solid;
+    border-color: darkgray;
+    background-color: black;
+    width: 900px;
+    height: 400px;
+    margin: 50px auto;
+    padding: 10px 0px 0px 25px;
+    font-family: sans-serif;    
+    background: url('../imagens/calendario.png')no-repeat 95% 95%;
+}
+
+div#marcar p{
+    font-size: 11pt;
+}
+
+span#corpo{
+    background: url:('../imagens/bg1.jpg');
+}
+
+/* Classe para os inputs de cpf e senha */
+
+.txtconsulta{
+    padding: 8px 10px;
+    width: 180px;
+    
+}
+
+/* Formatação dos botões */
+
+#botao{
+    padding: 6px;
+    margin-top: 3px;
+    width: 81px;
+    border-radius: 2px;
+}
+
+#botao2{
+    padding: 6px 0px 6px 1px;
+    margin-left: 15px;
+    width: 106px;
+    border-radius: 2px;
+}
+
+aside #bt-pesquisa{
+    float: right;
+    margin-right: 10px;
+    border-radius: 2px;
+    padding: 8px;
+    width: 150px;
+    background-color: rgb(60, 179, 113);
+}
+
+aside #bt-desmarca{
+    float: right;
+    margin-right: 10px;
+    border-radius: 2px;
+    padding: 8px;
+    width: 150px;
+    background-color: rgb(60, 179, 113);
+}
+
+/* Tudo relacionado ao rodapé da página */
+
+footer#rodape{
+    border-top: 2px darkgray solid;
+    margin:50px 0px 0px 10px;
+    font-family: candara;
+    display: block;
+}
+
+div#institucional li{
+    margin-left: -40px;
+}
+
+div#encontrar{
+    margin: -120px 0px 0px 230px;
+}
+
+div#atendimento{
+    margin: -286px 0px 0px 450px;
+}
+
+div#atendimento .online{
+    margin: -180px 0px 0px 280px;
+}
+
+div#conectar{
+    margin: -180px 0px 0px 950px;
+}
+
+div#conectar img{
+    margin: -30px 0px 0px -60px;
+}
