@@ -22,12 +22,13 @@
 
     <?php 
         
-        $conecte = mysqli_connect('localhost', 'root', '', 'clinica_suavida') or die('Algo saiu errado!');
+        include ("conexao.php");
+        //$conecte = mysqli_connect('localhost', 'root', '', 'clinica_suavida') or die('Algo saiu errado!');
         $usuario = $_POST['usuario'];
         $senha = $_POST['senha'];
         $sql = ("SELECT *FROM medicos WHERE login = '$usuario' AND senha = '$senha' ");
-        $consulta = mysqli_query($conecte, $sql) or die ('Ops! algo errado.');
-        $row = mysqli_num_rows($consulta);
+        $result = mysqli_query($con, $sql) or die ('Ops! algo errado.');
+        $row = mysqli_num_rows($result);
         
         // Se uma linha, com as informações do usuário, for encontrada no banco; a função 'cadastrar' é executada. Senão entra em ação 'loginErrado'
 
@@ -41,6 +42,7 @@
             echo '<script>loginErrado();</script>';
         }
         
+        mysqli_close($con);
     ?>
 </body>    
 </html>

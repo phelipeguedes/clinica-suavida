@@ -44,6 +44,6 @@
     <h3>Cadastro de Paciente</h3>
     <p>Paciente cadastrado com sucesso!</p>
     
-        <p><a href="../index.html">Voltar</a></p>
+        <p><a href="../index.html"><input type="button" value="Voltar"></a></p>
 </body>    
 </html>

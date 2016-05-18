@@ -27,6 +27,7 @@
 					<li><a href="../marcacao-procedimentos/procedimentos.html">Procedimentos</a></li>
 				</ul>
 			</nav>
+			
 			<img src="../imagens/logo.jpg" id="logo" />
     
             <h4>Cadastro de Médicos</h4>
@@ -45,44 +46,29 @@
 		<form name="formulario" action="registrar-medico.php" method="post" id="formulario">
 			<fieldset id="cadastrar_medico">
 
-				<label class="lblcadastro">Nome:<input type="text"
-					name="nome" id="nome" class="txtcadastro" placeholder="nome"
-					required /></label><br /> <label class="lblcadastro">CRM:<input
-					type="text" name="crm" id="crm" class="txtcadastro"
-					placeholder="crm" required /></label><br /> <label class="lblcadastro">UF:<input
-					type="text" name="uf" id="uf" class="txtcadastro" placeholder="uf"
-					required /></label><br /> <label class="lblcadastro">Nascimento:<input
-					type="date" name="nascimento" id="nascimento" class="txtcadastro"
-					placeholder="data de nascimento" required /></label><br /> <label
-					class="lblcadastro">Especialidade:<input type="text"
-					name="especialidade" id="especialidade" class="txtcadastro"
-					placeholder="especialidade" required /></label><br /> <label
-					class="lblcadastro">Email:<input type="email" name="email"
-					id="email" class="txtcadastro" placeholder="email" required /></label><br />
-				<br /> Sexo:<label class="sexo">Masculino<input type="radio"
-					name="sexo" id="masculino" value="masculino" required /></label> <label
-					class="sexo" id="fem">Feminino<input type="radio"
-					name="sexo" id="feminino" value="feminino" required /></label><br />
-				<br /> Fazendo residência?:<label class="residencia" id="sim">Sim<input
-					type="radio" name="residencia" id="sim" value="sim" required /></label> <label>Não<input
-					type="radio" name="residencia" id="nao" value="nao" required /></label><br/><br/>
-                <p><a href="atualizar-medico_form.php"><input type="button" name="btalterar" id="btalterar" class="botao" value="alterar"/></a>
+				<label class="lblcadastro">Nome:<input type="text" name="nome" id="nome" class="txtcadastro" placeholder="nome"	required/></label><br/>
+				<label class="lblcadastro">CRM:<input type="text" name="crm" id="crm" class="txtcadastro" placeholder="crm" required/></label><br/>
+				<label class="lblcadastro">UF:<input type="text" name="uf" id="uf" class="txtcadastro" placeholder="uf"	required/></label><br/> 
+				<label class="lblcadastro">Nascimento:<input type="date" name="nascimento" id="nascimento" class="txtcadastro" placeholder="data de nascimento" required /></label><br/> 
+				<label class="lblcadastro">Especialidade:<input type="text"	name="especialidade" id="especialidade" class="txtcadastro"	placeholder="especialidade" required /></label><br/>
+				<label class="lblcadastro">Email:<input type="email" name="email" id="email" class="txtcadastro" placeholder="email" required /></label><br/><br/> Sexo:<label class="sexo">Masculino<input type="radio" name="sexo" id="masculino" value="masculino" required/></label> 
+				<label class="sexo" id="fem">Feminino<input type="radio" name="sexo" id="feminino" value="feminino" required/></label><br/><br/>
+				Fazendo residência?:<label class="residencia" id="sim">Sim<input type="radio" name="residencia" id="sim" value="sim" required /></label> 
+				<label>Não<input type="radio" name="residencia" id="nao" value="nao" required /></label><br/><br/>
+                <p>
+                	<a href="atualizar-medico_form.php"><input type="button" name="btalterar" id="btalterar" class="botao" value="alterar"/></a>
                     <a href="excluir-medico_form.php"><input type="button" name="btexcluir" id="btexcluir" class="botao" value="excluir"/></a>
                 </p>    
 
                 <!-- Campos de login e senha do lado direito -->
                 
 				<aside id="lado">
-					<label class="lbllado">Login:<input type="text"
-						name="login" id="login" class="txtcadastrolado"
-						placeholder="nome de usuario" required /></label><br />
-					<br />
-					<br /> <label class="lbllado">Senha:<input type="password"
-						name="senha" id="senha" class="txtcadastrolado"
-						placeholder="senha" required /></label><br />
+					<label class="lbllado">Login:<input type="text"	name="login" id="login" class="txtcadastrolado"	placeholder="nome de usuario" required/></label><br/>
+					<br/>
+					<br/>
+					<label class="lbllado">Senha:<input type="password"	name="senha" id="senha" class="txtcadastrolado"	placeholder="senha" required/></label><br/>
 					<p>
-						<input type="submit" value="cadastrar" class="lbllado"
-							id="btcadastrar" onclick="validarFormMedico();" />
+						<input type="submit" value="cadastrar" class="lbllado" id="btcadastrar" onclick="validarFormMedico();"/>
 					</p>
 				</aside>
 
