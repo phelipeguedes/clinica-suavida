@@ -41,10 +41,8 @@
 		<form name="formulario" action="atualizar-medico.php" method="post" id="formulario">
 			<fieldset id="cadastrar_medico">
                 
-                <label class="lblcadastro">Identificação:<input type="text"
-					name="id" id="id" class="txtcadastro" placeholder="id"
-					required /></label><br /> 
-				<label class="lblcadastro">Nome:<input type="text"	name="nome" id="nome" class="txtcadastro" placeholder="nome" required/></label><br/>
+                <label class="lblcadastro">Identificação:<input type="text"	name="id" id="id" class="txtcadastro" placeholder="id" required /></label><br/> 
+				<label class="lblcadastro">Nome:<input type="text" name="nome" id="nome" class="txtcadastro" placeholder="nome" required /></label><br/>
 				<label class="lblcadastro">CRM:<input type="text" name="crm" id="crm" class="txtcadastro" placeholder="crm" required /></label><br/>
 				<label class="lblcadastro">UF:<input type="text" name="uf" id="uf" class="txtcadastro" placeholder="uf"	required /></label><br/>
 				<label class="lblcadastro">Nascimento:<input type="date" name="nascimento" id="nascimento" class="txtcadastro" placeholder="data de nascimento" required /></label><br/>
