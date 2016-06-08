@@ -17,18 +17,13 @@
     
     if($ok1){
         echo("Médico(a) deletado(a) com sucesso!");
-    }else{
-        echo("Algo saiu errado. Médico(a) não deletado(a)");
-    }
 
-    if($ok2){
+    } else if ($ok2){
         echo("Médico(a) deletado(a) com sucesso!");
-    }else{
-        echo("Algo saiu errado. Médico(a) não deletado(a)");
-    }
 
-    if($ok3){
+    } else if($ok3){
         echo("Médico(a) deletado(a) com sucesso!");
+    
     }else{
         echo("Algo saiu errado. Médico(a) não deletado(a)");
     }

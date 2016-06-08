@@ -51,8 +51,8 @@
 
 				Sexo:<label class="sexo">Masculino<input type="radio" name="sexo" id="masculino" value="masculino" required /></label>
 				<label class="sexo" id="fem">Feminino<input type="radio" name="sexo" id="feminino" value="feminino" required /></label><br/><br/>
-				Fazendo residência?:<label class="residencia" id="sim">Sim<input type="radio" name="residencia" id="sim" value="sim" required /></label> 
-				<label>Não<input type="radio" name="residencia" id="nao" value="nao" required /></label><br/><br/>
+				Fazendo residência?:<label class="residencia" id="sim">Sim<input type="radio" name="residente" id="sim" value="sim" required /></label> 
+				<label>Não<input type="radio" name="residente" id="nao" value="nao" required /></label><br/><br/>
 
 				<aside id="lado">
 					<label class="lbllado">Login:<input type="text"	name="login" id="login" class="txtcadastrolado"	placeholder="nome de usuario" required/></label><br/><br/><br/>

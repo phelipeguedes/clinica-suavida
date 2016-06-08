@@ -21,7 +21,7 @@
 					<li><a href="../guia-medico.html">Guia Médico</a></li>
 					<li><a href="cadastrar-medico_login.html">Cadastrar Médico</a></li>
 					<li><a href="../cadastro-paciente/cadastrar-paciente_login.html">Cadastrar Paciente</a></li>
-					<li><a href="../procedimentos.html">Procedimentos</a></li>
+					<li><a href="../marcacao-procedimentos/procedimentos.html">Procedimentos</a></li>
 				</ul>
 			</nav>
 			<img src="../imagens/logo.jpg" id="logo" />
@@ -41,16 +41,10 @@
 			
             <fieldset id="cadastrar_medico">
                 
-                <label class="lblcadastro">Identificação:<input type="text"
-					name="id" id="id" class="txtcadastro" placeholder="id"
-					required /></label><br /> 
-				<label class="lblcadastro">Nome:<input type="text"
-					name="nome" id="nome" class="txtcadastro" placeholder="nome"
-					 /></label><br /> <label class="lblcadastro">CRM:<input
-					type="text" name="crm" id="crm" class="txtcadastro"
-					placeholder="crm" /></label><br /><br/><br/>
-				<p>	<input type="submit" value="excluir" id="btexcluir" /> </p>
-				
+                <label class="lblcadastro">Identificação:<input type="text" name="id" id="id" class="txtcadastro" placeholder="id" required /></label><br/> 
+				<label class="lblcadastro">Nome:<input type="text" name="nome" id="nome" class="txtcadastro" placeholder="nome"/></label><br/>
+				<label class="lblcadastro">CRM:<input type="text" name="crm" id="crm" class="txtcadastro" placeholder="crm" /></label><br/><br/><br/><br/>
+				<input type="submit" value="excluir" id="btexcluir"/>				
 
 			</fieldset>
 		</form>

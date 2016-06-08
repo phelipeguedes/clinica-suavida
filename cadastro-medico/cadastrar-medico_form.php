@@ -55,10 +55,10 @@
 				<label class="sexo" id="fem">Feminino<input type="radio" name="sexo" id="feminino" value="feminino" required/></label><br/><br/>
 				Fazendo residência?:<label class="residencia" id="sim">Sim<input type="radio" name="residencia" id="sim" value="sim" required /></label> 
 				<label>Não<input type="radio" name="residencia" id="nao" value="nao" required /></label><br/><br/>
-                <p>
-                	<a href="atualizar-medico_form.php"><input type="button" name="btalterar" id="btalterar" class="botao" value="alterar"/></a>
-                    <a href="excluir-medico_form.php"><input type="button" name="btexcluir" id="btexcluir" class="botao" value="excluir"/></a>
-                </p>    
+                <br/><br/>
+                <a href="atualizar-medico_form.php"><button type="button" name="btalterar" id="btalterar" class="botao">alterar</button></a>
+                <a href="excluir-medico_form.php"><input type="button" name="btexcluir" id="btexcluir" class="botao" value="excluir"/></a>
+                
 
                 <!-- Campos de login e senha do lado direito -->
                 

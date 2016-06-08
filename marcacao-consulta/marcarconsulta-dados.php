@@ -18,9 +18,9 @@
             <li><a href="../index.html">Home</a></li>    
             <li><a href="../marcacao-consulta/autenticacao.html">Marcar Consulta</a></li>    
             <li><a href="../guia-medico.html">Guia Médico</a></li>    
-            <li><a href="../cadastro-medico_login.html">Cadastrar Médico</a></li>    
+            <li><a href="../cadastro-medico/cadastrar-medico_login.html">Cadastrar Médico</a></li>    
             <li><a href="../cadastro-paciente/cadastrar-paciente_login.html">Cadastrar Paciente</a></li>    
-            <li><a href="../procedimentos.html">Procedimentos</a></li>    
+            <li><a href="../marcacao-procedimentos/procedimentos.html">Procedimentos</a></li>    
         </ul>
     </nav>
     
@@ -92,12 +92,12 @@
             </optgroup>
         </select>
             
-            <p><label>ESCOLHA UMA DATA</label><br/>
-                <input type="datetime-local" name="data" id="data" class="txtconsulta" required/> 
-            </p>
-            <p>
-                <input type="submit" name="marcar" id="marcar" value="Marcar" onclick="validarConsultaDados();" />
-            </p>
+            <br/><br/>
+            <label>ESCOLHA UMA DATA</label><br/>
+            <input type="datetime-local" name="data" id="data" class="txtconsulta" required/> 
+            
+            <br/><br/>
+            <input type="submit" name="marcar" id="marcar" value="Marcar" onclick="validarConsultaDados();" />
     </form>
 </div>
     

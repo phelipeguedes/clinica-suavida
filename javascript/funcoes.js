@@ -11,14 +11,16 @@ function validarLogin() {
 function validarLoginConsulta() {
     if ((document.getElementById("cpf").value.length === "") || (document.getElementById("senha").value === "")) {
         alert("Por favor, preencha os campos corretamente.");
+        
+        return false;
     }
+        
 }
 
 /* "validarFomrMedico" informa o/a colaborador(a) se há campos vazios no cadastro de médicos */
 
 function validarFormMedico() {
     if ((document.getElementById("nome").value === "") || (document.getElementById("crm").value === "") || (document.getElementById("uf").value === "") || (document.getElementById("nascimento").value === "") || (document.getElementById("especialidade").value === "") || (document.getElementById("email").value === "") || (document.getElementById("login").value === "") || (document.getElementById("senha").value === "")){
-
         alert("Para realizar o cadastro, preencha todos os campos.");
     }
 }
@@ -26,8 +28,7 @@ function validarFormMedico() {
 /* "validarFomrMedico" informa o/a usuario(a) se há campos vazios no cadastro de pacientes */
 
 function validarFormPaciente() {
-    if ((document.getElementById("nome").value === "") || (document.getElementById("nascimento").value === "") || (document.getElementById("e_civil").value === "") || (document.getElementById("cpf").value === "") || (document.getElementById("rg").value === "") || (document.getElementById("plano").value === "") || (document.getElementById("senha").value === "") || (document.getElementById("historico").value === "") || (document.getElementById("logradouro").value === "") || (document.getElementById("bairro").value === "") || (document.getElementById("cidade").value === "") || (document.getElementById("estado").value === "")){
-                
+    if ((document.getElementById("nome").value === "") || (document.getElementById("nascimento").value === "") || (document.getElementById("e_civil").value === "") || (document.getElementById("cpf").value === "") || (document.getElementById("rg").value === "") || (document.getElementById("plano").value === "") || (document.getElementById("senha").value === "") || (document.getElementById("historico").value === "") || (document.getElementById("logradouro").value === "") || (document.getElementById("bairro").value === "") || (document.getElementById("cidade").value === "") || (document.getElementById("estado").value === "")){                
         alert("Para realizar o cadastro, preencha todos os campos.");
     }
 }

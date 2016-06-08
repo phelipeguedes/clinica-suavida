@@ -20,7 +20,7 @@
 					<li><a href="../guia-medico.html">Guia Médico</a></li>
 					<li><a href="../cadastro-medico/cadastrar-medico_login.html">Cadastrar Médico</a></li>
 					<li><a href="../cadastro-paciente/cadastrar-paciente_login.html">Cadastrar Paciente</a></li>
-					<li><a href="../procedimentos.html">Procedimentos</a></li>
+					<li><a href="../marcacao-procedimentos/procedimentos.html">Procedimentos</a></li>
 				</ul>
 			</nav>
 			<img src="../imagens/logo.jpg" id="logo" />
@@ -44,8 +44,8 @@
             <p>Para acessar o sistema de marcação informe o seu cpf e sua senha.</p>
 
             <aside>            	
-            	<a href="desmarcar-consulta.html"><input type="button" id="bt-desmarca" value="Desmarcar Consulta" onclick="validarLoginConsulta();" /></a>
-            	<a href="pesquisar-consulta.html"><input type="button" id="bt-pesquisa" value="Pesquisar Consulta" onclick="validarLoginConsulta();" /></a>
+            	<a href="desmarcar-consulta.html"><input type="button" id="bt-desmarca" value="Desmarcar Consulta" onclick=" return validarLoginConsulta();" /></a>
+            	<a href="pesquisar-consulta.html"><input type="button" id="bt-pesquisa" value="Pesquisar Consulta" onclick=" return validarLoginConsulta();" /></a>
             </aside>
             
             <form method="post" action="marcarconsulta.php">
