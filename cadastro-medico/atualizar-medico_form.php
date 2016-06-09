@@ -17,7 +17,7 @@
 			<nav id="menu">
 				<ul>
 					<li><a href="../index.html">Home</a></li>
-					<li><a href="../marcacao-consulta/autenticacao.html">Marcar	Consulta</a></li>
+					<li><a href="../marcacao-consulta/autenticacao.html">Marcar Consulta</a></li>
 					<li><a href="../guia-medico.html">Guia Médico</a></li>
 					<li><a href="cadastrar-medico_login.html">Cadastrar Médico</a></li>
 					<li><a href="../cadastro-paciente/cadastrar-paciente_login.html">Cadastrar Paciente</a></li>
@@ -25,10 +25,10 @@
 				</ul>
 			</nav>
 			
-            <img src="../imagens/logo.jpg" id="logo" />
+            		<img src="../imagens/logo.jpg" id="logo" />
     
-            <h4>Alteração de Cadastro Médico</h4>
-            <hr>
+        	 	<h4>Alteração de Cadastro Médico</h4>
+            		<hr>
 		</header>
 	</div> 
 	
@@ -41,8 +41,8 @@
 		<form name="formulario" action="atualizar-medico.php" method="post" id="formulario">
 			<fieldset id="cadastrar_medico">
                 
-                <label class="lblcadastro">Identificação:<input type="text"	name="id" id="id" class="txtcadastro" placeholder="id" required /></label><br/> 
-				<label class="lblcadastro">Nome:<input type="text" name="nome" id="nome" class="txtcadastro" placeholder="nome" required /></label><br/>
+                		<label class="lblcadastro">Identificação:<input type="text" name="id" id="id" class="txtcadastro" placeholder="id" required /></label><br/> 
+				<label class="lblcadastro">Nome:<input type="text" name="nome" id="nome" class="txtcadastro" placeholder="nome" required/></label><br/>
 				<label class="lblcadastro">CRM:<input type="text" name="crm" id="crm" class="txtcadastro" placeholder="crm" required /></label><br/>
 				<label class="lblcadastro">UF:<input type="text" name="uf" id="uf" class="txtcadastro" placeholder="uf"	required /></label><br/>
 				<label class="lblcadastro">Nascimento:<input type="date" name="nascimento" id="nascimento" class="txtcadastro" placeholder="data de nascimento" required /></label><br/>
@@ -58,7 +58,7 @@
 					<label class="lbllado">Login:<input type="text"	name="login" id="login" class="txtcadastrolado"	placeholder="nome de usuario" required/></label><br/><br/><br/>
 					<label class="lbllado">Senha:<input type="password"	name="senha" id="senha" class="txtcadastrolado" placeholder="senha" required/></label><br/>
 					<p>
-						<input type="submit" value="atualizar" class="lbllado" id="btcadastrar" onclick="validarFormMedico();"/>
+					    <input type="submit" value="atualizar" class="lbllado" id="btcadastrar" onclick="validarFormMedico();"/>
 					</p>
 				</aside>
 
