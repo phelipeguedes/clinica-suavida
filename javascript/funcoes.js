@@ -81,3 +81,5 @@ function abrirPopUp(URL){
 
     window.open(URL, 'janela', 'width=' +width+ ', height='+height+', top='+top+', left='+left+', scrollbars=yes, status=no, tollbar=no, location=no, menubar=no, resizable=no, fullscreen=no');
 }
+
+
