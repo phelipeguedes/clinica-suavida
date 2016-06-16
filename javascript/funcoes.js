@@ -56,6 +56,17 @@ function entrarCadMedico(){
     alert("ATENÇÃO! Esta página é de uso restrito. Somente médicos e colaboradores são autorizados para cadastrar, alterar ou excluir um médico(a).");
 }
 
+// Funções que verificam se o login é válido. A função 'cadastrarMedico' redireciona p/ o cadastro, 'errarLoginMedico' redireciona p/ a página de login
+
+function cadastrarMedico(){
+    setTimeout("window.location='cadastrar-medico_form.php'", 2000);
+}
+        
+function errarLoginMedico(){            
+    setTimeout("window.location='cadastrar-medico_login.html'");
+    alert("Login ou senha incorretos! :( ");
+}
+
 /* Esta função apresenta um alert no momento em que a página é carregada. Informa a quem se destina o uso da página */
 
 function entrarCadPaciente(){

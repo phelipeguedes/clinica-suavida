@@ -6,18 +6,7 @@
 
     <meta charset="utf-8"/>
     <title>Cadastro de Médicos</title>
-    <script type="text/javascript">
-
-        // Funções que verificam se o login é válido. A 1ª função redireciona p/ o cadastro, a 2ª p/ a página de login novamente 
-
-        function cadastrar(){
-            setTimeout("window.location='cadastrar-medico_form.php'", 2000);
-        }
-        function loginErrado(){            
-            setTimeout("window.location='cadastrar-medico_login.html'");
-            alert("Login ou senha incorretos! :( ");
-        }
-    </script>
+    <script type="text/javascript" src="../javascript/funcoes.js"></script>
 </head>
 <body>
 
@@ -39,10 +28,10 @@
          $_SESSION['login'] = $_POST['usuario'];
          $_SESSION['senha'] = $_POST['senha'];
          echo 'Redirecionando...';
-         echo '<script>cadastrar();</script>';
+         echo '<script>cadastrarMedico();</script>';
      }
      else{
-         echo '<script>loginErrado();</script>';
+         echo '<script>errarLoginMedico();</script>';
      }   
     
 ?>
