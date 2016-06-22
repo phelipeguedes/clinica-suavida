@@ -6,6 +6,7 @@
 
 	<meta charset="utf-8" />
     <title>Cadastro de Médicos</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" href="../css/cadastrar_medico.css" />
     <script src="../javascript/funcoes.js"></script>
 </head>

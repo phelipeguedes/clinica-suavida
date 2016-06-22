@@ -3,6 +3,7 @@
 <head>
     <meta charset="utf-8"/>
     <title>Clínica Sua Vida</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" href="../css/marcarconsulta-dados.css"/>
     <script type="text/javascript" src="../javascript/funcoes.js"></script>
 </head>
