@@ -3,8 +3,8 @@
 /* Cabeçalho: Menu e login */
 
 body{
-    width: 100%;
-    height: 100%;
+    width: auto;
+    height: auto;
 }
 
 nav#menu{
