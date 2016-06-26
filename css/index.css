@@ -2,6 +2,11 @@
 
 /* Cabeçalho: Menu e login */
 
+.wrapper{
+    width: 1000px;
+    margin: 20px auto;
+}
+
 body{
     width: auto;
     height: auto;
