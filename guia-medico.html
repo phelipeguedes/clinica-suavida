@@ -9,249 +9,239 @@
 </head>
 <body>
 	
+	<div class="container"> <!-- conteúdo de toda a página -->
+    
     <!-- Menu e campos de login -->
     
-	<div id="interface">
-		<header>
-			<nav id="menu">
-				<ul>
-					<li><a href="index.html">Home</a></li>
-					<li><a href="marcacao-consulta/autenticacao.html">Marcar Consulta</a></li>
-					<li><a href="guia-medico.html">Guia Médico</a></li>
-					<li><a href="cadastro-medico/cadastrar-medico_login.html">Cadastrar Médico</a></li>
-					<li><a href="cadastro-paciente/cadastrar-paciente_login.html">Cadastrar Paciente</a></li>
-					<li><a href="procedimentos.html">Procedimentos</a></li>
-				</ul>
-			</nav>
-			<img src="imagens/logo.jpg" id="logo" />
-
-			<form action="php/login.php" method="post" id="colaborador">
-				<fieldset>
-					<label for="usuario" id="area"><br />Área restrita para<br />&nbsp;&nbsp;colaboradores</label>
-					<input type="text" name="usuario" id="usuario" class="txtusuario" placeholder="usuario" required />
-					<input type="password" name="senha" id="senha" class="txtusuario" placeholder="senha" required />
-					<input type="submit" name="logar" id="logar" id="txtusuario" value="entrar" onclick="validarLogin();" /> 
-					<a href="cadastro-medico/cadastrar-medico_login.html" id="cadastrar" name="cadastrar" class="txtusuario">Cadastre-se</a>					
-				</fieldset>
-			</form>
-		</header>
-	</div>
+		<div id="interface">
+			<header>
+				<nav id="menu">
+					<ul>
+						<li><a href="index.html">Home</a></li>
+						<li><a href="marcacao-consulta/autenticacao.html">Marcar Consulta</a></li>
+						<li><a href="guia-medico.html">Guia Médico</a></li>
+						<li><a href="cadastro-medico/cadastrar-medico_login.html">Cadastrar Médico</a></li>
+						<li><a href="cadastro-paciente/cadastrar-paciente_login.html">Cadastrar Paciente</a></li>
+						<li><a href="procedimentos.html">Procedimentos</a></li>
+					</ul>
+				</nav>
+				
+				<div id="logo"><img src="imagens/logo.jpg" id="logo"/></div>                                                                
+				
+					<fieldset id="colaborador">
+						<form action="php/login.php" method="post">
+							<label for="usuario" id="area"><br />Área restrita para<br/>&nbsp;&nbsp;colaboradores</label>
+							<input type="text" name="usuario" id="usuario" class="txtusuario" placeholder="usuario" required />
+							<input type="password" name="senha" id="senha" class="txtusuario" placeholder="senha" required />
+							<input type="submit" name="logar" id="logar" id="txtusuario" value="entrar" onclick="validarLogin();" /> 
+							<a href="cadastro-medico/cadastrar-medico_login.html" id="cadastrar" name="cadastrar" class="txtusuario">Cadastre-se</a>
+						</form>	
+					</fieldset>				
+			</header>
+		</div>
     
-    <!-- Subtítulo -->
-	<h4>Guia Médico</h4>
-	<hr>
-	
-    <!-- Imagem de equipe médica -->
-	<img src="imagens/equipe2.jpg" alt="equipe" id="equipe" />
-	
-    <div id="relacao">
-		<p>
-			Veja a relação de médicos que trabalham com a clínica
-			Sua Vida e agende sua consulta/procedimento em um das unidades mais
-			próximas a você. 		    
-        </p><br/>
-	</div>
+	    <!-- Subtítulo -->
+		<h4>Guia Médico</h4>
+		<hr>
+		
+		<!-- Imagem de equipe médica -->
+		<figure>
+			<img src="imagens/equipe2.jpg" alt="equipe" id="equipe" />	
+			<figcaption>
+				<p><strong>Veja a relação de médicos que trabalham com a clínica Sua Vida, 
+						   e agende sua consulta/procedimento em um das unidades mais próximas a você.
+				</strong></p>
+			</figcaption>
+		</figure>		
+		
+		<br/>	
 
-	<!-- Div com informações dos médicos, especialidades e locais de atendimento -->
+		<!-- Informações dos médicos, especialidades e locais de atendimento -->
 
-	<div id="medicos">
+		<section id="medicos">
 
-		<p>Dr. Ariosvaldo Clementino - Cardiologista</p>
-		<p>Endereço: Av dos Cabritos, 500</p>
-		<p>Próximo ao Banco do Brasil</p>
-		<p>Bairro: Centro</p>
-		<p>Cidade: Fortaleza</p>
-		<p>Telefone: (85) 3030.4455</p>
-		<p>Email: contato@clinica_suavida.com</p>
-		<br />
+			Dr. Ariosvaldo Clementino - Cardiologista<br/><br/>		
+			Endereço: Av dos Cabritos, 500<br/><br/>
+			Próximo ao Banco do Brasil<br/><br/>
+			Bairro: Centro<br/><br/>
+			Cidade: Fortaleza<br/><br/>
+			Telefone: (85) 3030.4455<br/><br/>
+			Email: contato@clinica_suavida.com<br/><br/>
+			<br/>			
 
-		<p>Dr. Vancinildo de Assis - Cardiologista</p>
-		<p>Endereço: Av dos Cabritos, 500</p>
-		<p>Próximo ao Banco do Brasil</p>
-		<p>Bairro: Centro</p>
-		<p>Cidade: Fortaleza</p>
-		<p>Telefone: (85) 3030.4455</p>
-		<p>Email: contato@clinica_suavida.com</p>
-		<br />
+			Dr. Vancinildo de Assis - Cardiologista<br/><br/>
+			Endereço: Av dos Cabritos, 500<br/><br/>
+			Próximo ao Banco do Brasil<br/><br/>
+			Bairro: Centro<br/><br/>
+			Cidade: Fortaleza<br/><br/>
+			Telefone: (85) 3030.4455<br/><br/>
+			Email: contato@clinica_suavida.com<br/><br/>
+			<br/>
 
-		<p>Dra Deuzanira Crispim - Cardiologista</p>
-		<p>Endereço: Av Brasil, 690</p>
-		<p>Próximo ao estadio Bernabeu</p>
-		<p>Bairro: Centro</p>
-		<p>Cidade: Fortaleza</p>
-		<p>Telefone: (85) 3030.4065</p>
-		<p>Email: contato@clinica_suavida.com</p>
-		<br />
+			Dra Deuzanira Crispim - Cardiologista<br/><br/>
+			Endereço: Av Brasil, 690<br/><br/>
+			Próximo ao estadio Bernabeu<br/><br/>
+			Bairro: Centro<br/><br/>
+			Cidade: Fortaleza<br/><br/>
+			Telefone: (85) 3030.4065<br/><br/>
+			Email: contato@clinica_suavida.com<br/><br/>
+			<br />
 
-		<p>Dr. Imaculada Fransquinha - Cardiologista</p>
-		<p>Endereço: Av das Camélias, 1020</p>
-		<p>Próximo a praça verde</p>
-		<p>Bairro: Rosas</p>
-		<p>Cidade: Fortaleza</p>
-		<p>Telefone: (85) 3030.5070</p>
-		<p>Email: contato@clinica_suavida.com</p>
-		<br />
+			Dr. Imaculada Fransquinha - Cardiologista<br/><br/>
+			Endereço: Av das Camélias, 1020<br/><br/>
+			Próximo a praça verde<br/><br/>
+			Bairro: Rosas<br/><br/>
+			Cidade: Fortaleza<br/><br/>
+			Telefone: (85) 3030.5070<br/><br/>
+			Email: contato@clinica_suavida.com<br/><br/>
+			<br />
 
-		<p>Dra. Cambraia Santos - Dermatologista</p>
-		<p>Endereço: Av dos Cabritos, 500</p>
-		<p>Próximo ao Banco do Brasil</p>
-		<p>Bairro: Centro</p>
-		<p>Cidade: Fortaleza</p>
-		<p>Telefone: (85) 3030.4455</p>
-		<p>Email: contato@clinica_suavida.com</p>
-		<br />
+			Dra. Cambraia Santos - Dermatologista<br/><br/>
+			Endereço: Av dos Cabritos, 500<br/><br/>
+			Próximo ao Banco do Brasil<br/><br/>
+			Bairro: Centro<br/><br/>
+			Cidade: Fortaleza<br/><br/>
+			Telefone: (85) 3030.4455<br/><br/>
+			Email: contato@clinica_suavida.com<br/><br/>
+			<br />
 
-		<p>Dra. Gertrudes Damasceno - Dermatogista</p>
-		<p>Endereço: Av dos Cabritos, 500</p>
-		<p>Próximo ao Banco do Brasil</p>
-		<p>Bairro: Centro</p>
-		<p>Cidade: Fortaleza</p>
-		<p>Telefone: (85) 3030.4455</p>
-		<p>Email: contato@clinica_suavida.com</p>
-		<br />
+			Dra. Gertrudes Damasceno - Dermatogista<br/><br/>
+			Endereço: Av dos Cabritos, 500<br/><br/>
+			Próximo ao Banco do Brasil<br/><br/>
+			Bairro: Centro<br/><br/>
+			Cidade: Fortaleza<br/><br/>
+			Telefone: (85) 3030.4455<br/><br/>
+			Email: contato@clinica_suavida.com<br/><br/>
+			<br />		
 
-		<p>Dra. Cambraia Santos - Dermatologista</p>
-		<p>Endereço: Av das Camélias, 1020</p>
-		<p>Próximo ao Banco do Brasil</p>
-		<p>Bairro: Rosas</p>
-		<p>Cidade: Fortaleza</p>
-		<p>Telefone: (85) 3030.5070</p>
-		<p>Email: contato@clinica_suavida.com</p>
-		<br />
+			Dr. Valfrido Maia - Dermatogista<br/><br/>
+			Endereço: Av Brasil, 690<br/><br/>
+			Próximo ao estádio Bernabeu<br/><br/>
+			Bairro: Jardins<br/><br/>
+			Cidade: Fortaleza<br/><br/>
+			Telefone: (85) 3030.4455<br/><br/>
+			Email: contato@clinica_suavida.com<br/><br/>
+			<br />
 
-		<p>Dr. Valfrido Maia - Dermatogista</p>
-		<p>Endereço: Av Brasil, 690</p>
-		<p>Próximo ao estádio Bernabeu</p>
-		<p>Bairro: Jardins</p>
-		<p>Cidade: Fortaleza</p>
-		<p>Telefone: (85) 3030.4455</p>
-		<p>Email: contato@clinica_suavida.com</p>
-		<br />
+			Dr. Crisanto Celestino - Gastroenterologista<br/><br/>
+			Endereço: Av dos Cabritos, 500<br/><br/>
+			Próximo ao Banco do Brasil<br/><br/>
+			Bairro: Centro<br/><br/>
+			Cidade: Fortaleza<br/><br/>
+			Telefone: (85) 3030.4455<br/><br/>
+			Email: contato@clinica_suavida.com<br/><br/>
+			<br />
 
-		<p>Dr. Crisanto Celestino - Gastroenterologista</p>
-		<p>Endereço: Av dos Cabritos, 500</p>
-		<p>Próximo ao Banco do Brasil</p>
-		<p>Bairro: Centro</p>
-		<p>Cidade: Fortaleza</p>
-		<p>Telefone: (85) 3030.4455</p>
-		<p>Email: contato@clinica_suavida.com</p>
-		<br />
+			Dr. Jaçanã Sampaio - Gastroenterologista<br/><br/>
+			Endereço: Av Brasil, 690<br/><br/>
+			Próximo ao estádio Bernabeu<br/><br/>
+			Bairro: Centro<br/><br/>
+			Cidade: Fortaleza<br/><br/>
+			Telefone: (85) 3030.4065<br/><br/>
+			Email: contato@clinica_suavida.com<br/><br/>
+			<br />
 
-		<p>Dr. Jaçanã Sampaio - Gastroenterologista</p>
-		<p>Endereço: Av Brasil, 690</p>
-		<p>Próximo ao estádio Bernabeu</p>
-		<p>Bairro: Centro</p>
-		<p>Cidade: Fortaleza</p>
-		<p>Telefone: (85) 3030.4065</p>
-		<p>Email: contato@clinica_suavida.com</p>
-		<br />
+			Dr. José Façanha - Ortopedista<br/><br/>
+			Endereço: Av dos Cabritos, 500<br/><br/>
+			Próximo ao Banco do Brasil<br/><br/>
+			Bairro: Centro<br/><br/>
+			Cidade: Fortaleza<br/><br/>
+			Telefone: (85) 3030.4455<br/><br/>
+			Email: contato@clinica_suavida.com<br/><br/>
+			<br />			
 
-		<p>Dr. José Façanha - Ortopedista</p>
-		<p>Endereço: Av dos Cabritos, 500</p>
-		<p>Próximo ao Banco do Brasil</p>
-		<p>Bairro: Centro</p>
-		<p>Cidade: Fortaleza</p>
-		<p>Telefone: (85) 3030.4455</p>
-		<p>Email: contato@clinica_suavida.com</p>
-		<br />
+			Dr. Francisco Epaminondas - Ortopedista<br/><br/>
+			Endereço: Av dos Cabritos, 500<br/><br/>
+			Próximo ao Banco do Brasil<br/><br/>
+			Bairro: Centro<br/><br/>
+			Cidade: Fortaleza<br/><br/>
+			Telefone: (85) 3030.4455<br/><br/>
+			Email: contato@clinica_suavida.com<br/><br/>
+			<br />
 
-		<p>Dr. José Façanha - Ortopedista</p>
-		<p>Endereço: Av dos Cabritos, 500</p>
-		<p>Próximo ao Banco do Brasil</p>
-		<p>Bairro: Centro</p>
-		<p>Cidade: Fortaleza</p>
-		<p>Telefone: (85) 3030.4455</p>
-		<p>Email: contato@clinica_suavida.com</p>
-		<br />
+			Dr. Marivaldo Marcondes - Ortopedista<br/><br/>
+			Endereço: Av Brasil, 690<br/><br/>
+			Próximo ao estádio Bernabeu<br/><br/>
+			Bairro: Jardins<br/><br/>
+			Cidade: Fortaleza<br/><br/>
+			Telefone: (85) 3030.4065<br/><br/>
+			Email: contato@clinica_suavida.com<br/><br/>
+			<br />
 
-		<p>Dr. Francisco Epaminondas - Ortopedista</p>
-		<p>Endereço: Av dos Cabritos, 500</p>
-		<p>Próximo ao Banco do Brasil</p>
-		<p>Bairro: Centro</p>
-		<p>Cidade: Fortaleza</p>
-		<p>Telefone: (85) 3030.4455</p>
-		<p>Email: contato@clinica_suavida.com</p>
-		<br />
+			Dr. Amadeu Teobaldo - Ortopedista<br/><br/>
+			Endereço: Av Brasil, 690<br/><br/>
+			Próximo ao estádio Bernabeu<br/><br/>
+			Bairro: Jardins<br/><br/>
+			Cidade: Fortaleza<br/><br/>
+			Telefone: (85) 3030.4065<br/><br/>
+			Email: contato@clinica_suavida.com<br/><br/>
+			<br />
+		</section>
 
-		<p>Dr. Marivaldo Marcondes - Ortopedista</p>
-		<p>Endereço: Av Brasil, 690</p>
-		<p>Próximo ao estádio Bernabeu</p>
-		<p>Bairro: Jardins</p>
-		<p>Cidade: Fortaleza</p>
-		<p>Telefone: (85) 3030.4065</p>
-		<p>Email: contato@clinica_suavida.com</p>
-		<br />
+		<!-- Rodapé presente em algumas páginas -->
 
-		<p>Dr. Amadeu Teobaldo - Ortopedista</p>
-		<p>Endereço: Av Brasil, 690</p>
-		<p>Próximo ao estádio Bernabeu</p>
-		<p>Bairro: Jardins</p>
-		<p>Cidade: Fortaleza</p>
-		<p>Telefone: (85) 3030.4065</p>
-		<p>Email: contato@clinica_suavida.com</p>
-		<br />
-	</div>
+		<footer id="rodape">
+            <div id="institucional">
+                <br/>
+                <label><b>INSTITUCIONAL</b></label><br/><br/> 
+                <a href="#">Sobre a Clínica Sua Vida</a><br/><br/> 
+                <a href="#">Atendimento ao Cliente</a><br/><br/> 
+                <a href="#">Trabalhe Conosco</a>
+            </div>
 
-	<!-- Rodapé presente em algumas páginas -->
+            <div id="onde">
+                <br/>
+                <label><b>ONDE ENCONTRAR</b></label><br/><br/> 
+                <label><b>Endereço 1:</b></label><br/><br/>
+                <label>Av. dos Cabritos, 500</label><br/>
+                <label>Centro - CEP:60150-500</label><br/>
+                <label>Fortaleza-CE</label>                
+            </div>
 
-	<footer id="rodape">
-		<div id="institucional">
-			<h4>INSTITUCIONAL</h4>
-			<ul type="none">
-				<li><a href="#">Sobre a Clínica</a></li>
-				<li><a href="#">Atendimento ao Cliente</a></li>
-				<li><a href="#">Trabalhe Conosco</a></li>
-			</ul>
-		</div>
+            <div id="endereco2">
+                <br/>
+                <br/><br/>
+                <label><b>Endereco 2:</b></label><br/><br/>
+                <label>Av. Brasil, 600</label><br/>
+                <label>Jardins - CEP:60700-310</label><br/>
+                <label>Fortaleza-CE</label>
+            </div>
 
-		<div id="encontrar">
-			<h4>ONDE ENCONTRAR</h4>
-			<h4>Endereços:</h4>
-			<p>
-				Av. dos Cabritos, 500<br /> Centro - CEP: 60150-500<br />
-				Fortaleza-CE
-			</p>
+            <div id="endereco3">
+                <br/><br/><br/>
+                <label><b>Endereco 3:</b></label><br/><br/>
+                <label>Av. das Camélias, 700</label><br/>
+                <label>Rosas - CEP:50780-220</label><br/>
+                <label>Fortaleza-CE</label>
+            </div>
 
-			<p id="endereco2">
-				Av. Brasil, 690<br /> Jardins - CEP: 60700-310<br /> Fortaleza-CE
-			</p>
+            <div id="atendimento">
+                <br/>
+                <label><b>ATENDIMENTO</b></label><br/><br/> 
+                <label><b>Telefones p/ Contato:</b></label><br/><br/>
+                <label>(85)3030.4055</label><br/>
+                <label>(85)3030.5070</label><br/>
+                <label>(85)30304055</label>
+            </div>
 
-			<p id="endereco3">
-				Av. das Camélias, 1020<br /> Rosas - CEP: 60900-900 Fortaleza-CE
-			</p>
-		</div>
-
-		<div id="atendimento">
-			<ul type="none">
-				<h4>ATENDIMENTO</h4>
-				<h4>Telefones:</h4>
-				<li>(85)3030.4055 (Av. dos Cabritos)</li>
-				<br />
-				<li>(85)3030.5070 (Av. das Camélias)</li>
-				<br />
-				<li>(85)3030.4455 (Av. Brasil)</li>
-				<br />
-			</ul>
-			<ul type="none" class="online">
-				<h4>On-line:</h4>
-				<li><a href="#">Chat On-line</a></li>
-				<li><a href="#">Deficientes Auditivos</a></li>
-				<li><a href="#">Perguntas Frequentes</a></li>
-				<li><a href="#">Fale Conosco</a></li>
-			</ul>
-		</div>
-
-		<div id="conectar">
-			<ul type="none">
-				<h4>SOCIAL</h4>
-				<h4>Conecte-se:</h4>
-				<br>
-				<img src="imagens/social.png" />
-			</ul>
-		</div>
-
-	</footer>
-
+            <div id="online">   
+                <br/><br/><br/>             
+                <label><b>On-line:</b></label><br/><br/>
+                <label><a href="#">Chat On-line</a></label><br/>
+                <label><a href="#">Deficientes Auditivos</a></label><br/>
+                <label><a href="#">Perguntas Frequentes</a></label><br/>
+                <label><a href="#">Fale Conosco</a></label>
+            </div>
+            
+            <div id="conectar"> 
+                <br/>               
+                <label><b>SOCIAL</b></label><br/><br/>
+                <label><b>Conecte-se</b></label><br/><br/>
+                <img src="imagens/social.png"/>                  
+            </div>
+            
+        </footer>
+	</div> <!-- .container -->
 
 </body>
 </html>

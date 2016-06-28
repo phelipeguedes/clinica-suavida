@@ -1,16 +1,35 @@
 @chaset="UTF-8";
 
-/* Cabeçalho: Menu e área de login */
+/* Cabeçalho: Menu e login */
+
+.container{
+    width: 100%;
+    margin: 20px auto;
+}
+
+body{
+    font-family: candara;
+}
+
+div#interface{
+    width: 960px;
+    margin: -22px auto auto;
+}
+
+div#logo img{
+    margin-top: 10px;
+    margin-left: -70px;
+}
 
 nav#menu{
+    margin-left: auto;
+    margin-right: auto;
     display: block;
-    margin: -10px 0px 0px 200px;
-    font-family: candara;
-    font-size: 13pt;
-    
+    font-size: 13pt;        
 }
 
 nav#menu ul{
+    text-align:center;
     text-transform: uppercase;
     position: absolute;
     text-decoration: none;
@@ -19,8 +38,7 @@ nav#menu ul{
 nav#menu li{
     display: inline-block;
     background-color: #b4c82a;
-    padding: 10px;
-    
+    padding: 10px;    
 }
 
 nav#menu li:hover{
@@ -36,106 +54,109 @@ a:visited{
     color: black;
 }
 
-img#logo{
-    margin: 10px 0px 0px 120px;
-}
+/* Container de login */
 
-/* Container com os campos de usuário e senha */
-
-form#colaborador{
+fieldset#colaborador{
     width: 690px;
-    margin: -5px 10px 0px 350px;
-    font-family:candara;
+    margin: -1px auto;
     font-size: 9pt;
 }
 
-form#colaborador label{
+fieldset#colaborador label{
     float: left;
 }
 
-form#colaborador input{    
+fieldset#colaborador input{    
     padding: 5px;
 }
 
-form#colaborador input#senha{
+fieldset#colaborador input#senha{
     margin-left: 6px;
 }
 
-form#colaborador a{
-    color: red;
+fieldset#colaborador a{
+   color: red;
    padding:1px;
    margin-bottom: 23px;
 }
 
-form input#logar{
+fieldset input#logar{
     width: 70px;
     margin-left: 8px;
     border-radius: 2px;
 }
 
-/* Classe para os campos de usuario e senha */
+/* Classe para os inputs de usuário e senha */
 
 .txtusuario{
     margin: 15px 0px 0px 20px;
+    width: 180px;
 }
 
-/* Subtítulo */
-
-h4{
-  font-family: candara;  
-}
-
-/* Formatação da imagem de equipe médica */
-
+/* Imagem de equipe médica */
 img#equipe{
-    margin: 30px 0px 10px 170px;
-    background-color: whitesmoke;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    background-color: #000000;
+    margin-bottom: 10px;
 }
 
-/* Texto abaixo da imagem da equipe de médicos */
-
-div#relacao{
-    margin:40px 0px 0px 0px;
-    font-family: candara;
+/* Legenda da imagem */
+figcaption{
+    text-align: center;
 }
 
-/* Div com os dados de todos os médicos: nome, especialidade e endereço */
-
-div#medicos{
-    font-family: candara;
-}
-
-/* Formatação do rodapé presente em algumas páginas */
+/* A partir daqui, tudo é relacionado ao rodapé da página */
 
 footer#rodape{
-    border-top: 2px darkgray solid;
-    margin:50px 0px 0px 10px;
-    font-family: candara;
-    display: block;
+    clear: both;
+    width: 100%;
+    border-top: 1px solid;
 }
 
-div#institucional li{
-    margin-left: -40px;
+
+div#institucional{
+    float: left;
+    position: relative;
+    width: 18%;
 }
 
-div#encontrar{
-    margin: -120px 0px 0px 230px;
+div#onde{
+    float: left;
+    position: relative;
+    width: 14%;
+}
+
+div#endereco2{
+    float: left;
+    position: relative;
+    width: 14%;   
+}
+
+div#endereco3{
+    float: left;
+    position: relative;
+    width: 15%;   
 }
 
 div#atendimento{
-    margin: -286px 0px 0px 450px;
+    float: left;
+    position: relative;
+    width: 15%;
 }
 
-div#atendimento .online{
-    margin: -180px 0px 0px 280px;
+div#online{
+    float: left;
+    position: relative;
+    width: 15%;
 }
 
 div#conectar{
-    margin: -180px 0px 0px 950px;
+    float: left;
+    position: relative;
 }
 
 div#conectar img{
     margin: -30px 0px 0px -60px;
 }
-
-

@@ -1,16 +1,36 @@
 @chaset="UTF-8";
 
+.container{
+    width: 100%;
+    margin: 20px auto;
+}
+
+body{
+    font-family: candara;
+}
+
 /* Cabeçalho: Menu e área de login */
 
+div#interface{
+    width: 960px;
+    margin: -22px auto;
+
+}
+
+div#logo img{
+    margin-top: 10px;
+    margin-left: -70px;
+}
+
 nav#menu{
+    //margin-left: auto;
+    //margin-right: auto;
     display: block;
-    margin: -10px 0px 0px 200px;
-    font-family: candara;
-    font-size: 13pt;
-    
+    font-size: 13pt;    
 }
 
 nav#menu ul{
+    text-align:center;    
     text-transform: uppercase;
     position: absolute;
     text-decoration: none;
@@ -36,8 +56,11 @@ a:visited{
     color: black;
 }
 
-img#logo{
-    margin: 10px 0px 0px 120px;
+div#logo{
+   top: 20px;
+   right: 150px;
+   left: 10px;
+   display: block;   
 }
 
 /* Subtítulo */
@@ -64,15 +87,17 @@ div#marcar p{
     font-size: 11pt;
 }
 
-span#corpo{
+div#corpo{
     background: url:('../imagens/bg1.jpg');
+    margin-left: auto;
+    margin-right: auto;
 }
 
 /* Classe para os inputs de cpf e senha */
 
 .txtconsulta{
     padding: 8px 10px;
-    width: 180px;
+    width: 200px;
     
 }
 
@@ -81,14 +106,14 @@ span#corpo{
 #botao{
     padding: 6px;
     margin-top: 3px;
-    width: 81px;
+    width: 85px;
     border-radius: 2px;
 }
 
 #botao2{
     padding: 6px 0px 6px 1px;
-    margin-left: 15px;
-    width: 106px;
+    margin-left: 20px;
+    width: 118px;
     border-radius: 2px;
 }
 
@@ -113,30 +138,51 @@ aside #bt-desmarca{
 /* Tudo relacionado ao rodapé da página */
 
 footer#rodape{
-    border-top: 2px darkgray solid;
-    margin:50px 0px 0px 10px;
-    font-family: candara;
-    display: block;
+    clear: both;
+    width: 100%;
+    border-top: 1px solid;
 }
 
-div#institucional li{
-    margin-left: -40px;
+
+div#institucional{
+    float: left;
+    position: relative;
+    width: 18%;
 }
 
-div#encontrar{
-    margin: -120px 0px 0px 230px;
+div#onde{
+    float: left;
+    position: relative;
+    width: 14%;
+}
+
+div#endereco2{
+    float: left;
+    position: relative;
+    width: 14%;   
+}
+
+div#endereco3{
+    float: left;
+    position: relative;
+    width: 15%;   
 }
 
 div#atendimento{
-    margin: -286px 0px 0px 450px;
+    float: left;
+    position: relative;
+    width: 15%;
 }
 
-div#atendimento .online{
-    margin: -180px 0px 0px 280px;
+div#online{
+    float: left;
+    position: relative;
+    width: 15%;
 }
 
 div#conectar{
-    margin: -180px 0px 0px 950px;
+    float: left;
+    position: relative;
 }
 
 div#conectar img{

@@ -9,124 +9,132 @@
 </head>
 <body>
     
-<!-- Cabeçãlho: menu e campos de usuario e senha -->
+    <div class="container"> <!-- conteúdo de toda a página -->        
     
-<div id="interface">
-    <header>
-    <nav id="menu">
+        <!-- Menu e campos de login -->
+            
+        <div id="interface">
+            <header>
+            <nav id="menu">
+                
+                <ul>            
+                    <li><a href="../index.html">Home</a></li>    
+                    <li><a href="../marcacao-consulta/autenticacao.html">Marcar Consulta</a></li>    
+                    <li><a href="../guia-medico.html">Guia Médico</a></li>    
+                    <li><a href="../cadastro-medico/cadastrar-medico_login.html">Cadastrar Médico</a></li>    
+                    <li><a href="../cadastro-paciente/cadastrar-paciente_login.html">Cadastrar Paciente</a></li>    
+                    <li><a href="procedimentos.html">Procedimentos</a></li>    
+                </ul>
+            </nav>
+                
+            <div id="logo"><img src="../imagens/logo.jpg" id="logo"/></div> 
+                
+                    <fieldset id="colaborador">
+                        <form action="../php/login.php" method="post">
+                            <label for="usuario" id="area"><br/>Área restrita para<br/>&nbsp;&nbsp;colaboradores</label>
+                            <input type="text" name="usuario" id="usuario" class="txtusuario" placeholder="usuario" required />
+                            <input type="password" name="senha" id="senha" class="txtusuario" placeholder="senha" required />
+                            <input type="submit" name="logar" id="logar" id="txtusuario" value="entrar" onclick="validarLogin();" />
+                            <a href="cadastro-medico/cadastro-medico_login.html" id="cadastrar" name="cadastrar" class="txtusuario">Cadastre-se</a>
+                        </form>    
+                    </fieldset>
+            </header>
+        </div>    <!-- #interface -->
         
-        <ul>            
-            <li><a href="../index.html">Home</a></li>    
-            <li><a href="../marcacao-consulta/autenticacao.html">Marcar Consulta</a></li>    
-            <li><a href="../guia-medico.html">Guia Médico</a></li>    
-            <li><a href="../cadastro-medico/cadastrar-medico_login.html">Cadastrar Médico</a></li>    
-            <li><a href="../cadastro-paciente/cadastrar-paciente_login.html">Cadastrar Paciente</a></li>    
-            <li><a href="procedimentos.html">Procedimentos</a></li>    
-        </ul>
-    </nav>
-        
-    <img src="../imagens/logo.jpg" id="logo" />    
-        
-        <form action="../php/login.php" method="post" id="colaborador">
-            <fieldset>
-                <label for="usuario" id="area"><br/>Área restrita para<br/>&nbsp;&nbsp;colaboradores</label>
-                <input type="text" name="usuario" id="usuario" class="txtusuario" placeholder="usuario" required />
-                <input type="password" name="senha" id="senha" class="txtusuario" placeholder="senha" required />
-                <input type="submit" name="logar" id="logar" id="txtusuario" value="entrar" onclick="validarLogin();" />
-                <a href="cadastro-medico/cadastro-medico_login.html" id="cadastrar" name="cadastrar" class="txtusuario">Cadastre-se</a>
-            </fieldset>
-        </form>        
-    </header>
-</div>    
-    
-<!-- Subtítulo -->    
-    
-<h4>Procedimentos</h4><hr>      
-    
-    <div id="fotoexames">
-        <img src="../imagens/exames.jpg" alt="exames laboratoriais" />
-    </div>
-    
-    <p id="secao">A clínica Sua Vida disponibiliza os seguintes exames, diagnósticos e procedimentos com a utilização da mais alta tecnologia na montagem dos tratamentos.</p> 
+        <!-- Subtítulo -->    
+            
+        <h4>Procedimentos</h4><hr>      
+            
+            <div id="fotoexames">
+                <img src="../imagens/exames.jpg" alt="exames laboratoriais" />
+            </div>
+            
+            <p id="secao">A clínica Sua Vida disponibiliza os seguintes exames, diagnósticos e procedimentos com a utilização da mais alta tecnologia na montagem dos tratamentos.</p> 
 
-    <p style="color: red; font-family: candara; font-size: 10pt">* Para mais informações, clique sobre o procedimento desejado.</p>
-    
-    <ul id="procedimentos">
-        <li id="foto01"><span class="fonte_preta"><a href="javascript:abrirPopUp('popups/biopsia.html');"> Biópsia</span></li>
-        <li id="foto02"><span class="fonte_preta"><a href="javascript:abrirPopUp('popups/botox.html');">Botóx</a></span></li>
-        <li id="foto03"><span class="fonte-branca"><a href="javascript:abrirPopUp('popups/desindometria-ossea.html');">Desindometria Óssea</a></span></li>
-        <li id="foto04"><span><a href="javascript:abrirPopUp('popups/doppler.html');">Doppler</a></span></li>
-        <li id="foto05"><span><a href="javascript:abrirPopUp('popups/ecocardiograma.html');">Ecocardiograma</a></span></li>
-        <li id="foto06"><span><a href="javascript:abrirPopUp('popups/eletrocardiograma.html');">Eletrocardiograma</a></span></li>
-        <li id="foto07"><span><a href="javascript:abrirPopUp('popups/eletroencefalograma');">Eletroencefalograma</a></span></li>
-        <li id="foto08"><span><a href="javascript:abrirPopUp('popups/endoscopia.html');">Endoscopia</a></span></li>
-        <li id="foto09"><span class="fonte_preta"><a href="javascript:abrirPopUp('popups/exame-laboratorial.html');">Exames Laboratoriais</a></span></li>
-        <li id="foto10"><span><a href="javascript:abrirPopUp('popups/impressao-3d.html');">Impressao 3D</span></li>
-        <li id="foto11"><span class="fonte_preta"><a href="javascript:abrirPopUp('popups/mamografia.html');">Mamografia</span></li>
-        <li id="foto12"><span class="fonte_preta"><a href="javascript:abrirPopUp('popups/peeling.html');">Peeling</span></li>         
-        <li id="foto13"><span><a href="javascript:abrirPopUp('popups/raiox-3d.html');">Raio - X 3D</span></li>
-        <li id="foto14"><span><a href="javascript:abrirPopUp('popups/tomografia-3d.html');">Tomografia Computadorizada 3D</span></li>
-        <li id="foto15"><span><a href="javascript:abrirPopUp('popups/ressonancia.html');">Ressonância Magnética</span></li>        
-        <li id="foto16"><span><a href="javascript:abrirPopUp('popups/ultrassonagrafia.html');">Ultrassonografia</span></li>
-    </ul>
-    
-<!-- Rodapé presente em algumas páginas -->    
-    
-<footer id="rodape">
-    <hr>
-    <div id="institucional">
-        <h4>INSTITUCIONAL</h4>
-        <ul type="none">
-            <li><a href="#">Sobre a Clínica</a></li>
-            <li><a href="#">Atendimento ao Cliente</a></li>
-            <li><a href="#">Trabalhe Conosco</a></li>
-        </ul>
-    </div>
-    
-    <div id="encontrar">
-        <h4>ONDE ENCONTRAR</h4>    
-        <h4>Endereços:</h4>
-        <p>Av. dos Cabritos, 500<br/>
-           Centro - CEP: 60150-500<br/>
-           Fortaleza-CE    
-        </p>
+            <p style="color: red; font-family: candara; font-size: 10pt">* Para mais informações, clique sobre o procedimento desejado.</p>
+            
+            <!-- Procedimentos realizados na clínica -->
+            <ul id="procedimentos">
+                <li id="foto01"><span class="fonte_preta"><a href="javascript:abrirPopUp('popups/biopsia.html');"> Biópsia</span></li>
+                <li id="foto02"><span class="fonte_preta"><a href="javascript:abrirPopUp('popups/botox.html');">Botóx</a></span></li>
+                <li id="foto03"><span class="fonte-branca"><a href="javascript:abrirPopUp('popups/desindometria-ossea.html');">Desindometria Óssea</a></span></li>
+                <li id="foto04"><span><a href="javascript:abrirPopUp('popups/doppler.html');">Doppler</a></span></li>
+                <li id="foto05"><span><a href="javascript:abrirPopUp('popups/ecocardiograma.html');">Ecocardiograma</a></span></li>
+                <li id="foto06"><span><a href="javascript:abrirPopUp('popups/eletrocardiograma.html');">Eletrocardiograma</a></span></li>
+                <li id="foto07"><span><a href="javascript:abrirPopUp('popups/eletroencefalograma');">Eletroencefalograma</a></span></li>
+                <li id="foto08"><span><a href="javascript:abrirPopUp('popups/endoscopia.html');">Endoscopia</a></span></li>
+                <li id="foto09"><span class="fonte_preta"><a href="javascript:abrirPopUp('popups/exame-laboratorial.html');">Exames Laboratoriais</a></span></li>
+                <li id="foto10"><span><a href="javascript:abrirPopUp('popups/impressao-3d.html');">Impressao 3D</span></li>
+                <li id="foto11"><span class="fonte_preta"><a href="javascript:abrirPopUp('popups/mamografia.html');">Mamografia</span></li>
+                <li id="foto12"><span class="fonte_preta"><a href="javascript:abrirPopUp('popups/peeling.html');">Peeling</span></li>         
+                <li id="foto13"><span><a href="javascript:abrirPopUp('popups/raiox-3d.html');">Raio - X 3D</span></li>
+                <li id="foto14"><span><a href="javascript:abrirPopUp('popups/tomografia-3d.html');">Tomografia Computadorizada 3D</span></li>
+                <li id="foto15"><span><a href="javascript:abrirPopUp('popups/ressonancia.html');">Ressonância Magnética</span></li>        
+                <li id="foto16"><span><a href="javascript:abrirPopUp('popups/ultrassonagrafia.html');">Ultrassonografia</span></li>
+            </ul>
+            
+         <!-- Rodapé presente em algumas páginas -->
+        <footer id="rodape">
+            <div id="institucional">
+                <br/>
+                <label><b>INSTITUCIONAL</b></label><br/><br/> 
+                <a href="#">Sobre a Clínica Sua Vida</a><br/><br/> 
+                <a href="#">Atendimento ao Cliente</a><br/><br/> 
+                <a href="#">Trabalhe Conosco</a>
+            </div>
 
-        <p id="endereco2">Av. Brasil, 690<br/>
-           Jardins - CEP: 60700-310<br/>
-           Fortaleza-CE    
-        </p>
+            <div id="onde">
+                <br/>
+                <label><b>ONDE ENCONTRAR</b></label><br/><br/> 
+                <label><b>Endereço 1:</b></label><br/><br/>
+                <label>Av. dos Cabritos, 500</label><br/>
+                <label>Centro - CEP:60150-500</label><br/>
+                <label>Fortaleza-CE</label>                
+            </div>
 
-        <p id="endereco3">Av. das Camélias, 1020<br/>
-           Rosas - CEP: 60900-900
-           Fortaleza-CE    
-        </p>
-    </div>    
-    
-    <div id="atendimento">
-        <ul type="none">
-            <h4>ATENDIMENTO</h4> 
-            <h4>Telefones:</h4>
-            <li>(85)3030.4055 (Av. dos Cabritos)</li><br/>
-            <li>(85)3030.5070 (Av. das Camélias)</li><br/>
-            <li>(85)3030.4455 (Av. Brasil)</li><br/>                        
-        </ul>
-        <ul type="none" class="online">
-            <h4>On-line:</h4>
-            <li><a href="#">Chat On-line</a></li>
-            <li><a href="#">Deficientes Auditivos</a></li>
-            <li><a href="#">Perguntas Frequentes</a></li>
-            <li><a href="#">Fale Conosco</a></li>
-        </ul>
+            <div id="endereco2">
+                <br/>
+                <br/><br/>
+                <label><b>Endereco 2:</b></label><br/><br/>
+                <label>Av. Brasil, 600</label><br/>
+                <label>Jardins - CEP:60700-310</label><br/>
+                <label>Fortaleza-CE</label>
+            </div>
+
+            <div id="endereco3">
+                <br/><br/><br/>
+                <label><b>Endereco 3:</b></label><br/><br/>
+                <label>Av. das Camélias, 700</label><br/>
+                <label>Rosas - CEP:50780-220</label><br/>
+                <label>Fortaleza-CE</label>
+            </div>
+
+            <div id="atendimento">
+                <br/>
+                <label><b>ATENDIMENTO</b></label><br/><br/> 
+                <label><b>Telefones p/ Contato:</b></label><br/><br/>
+                <label>(85)3030.4055</label><br/>
+                <label>(85)3030.5070</label><br/>
+                <label>(85)30304055</label>
+            </div>
+
+            <div id="online">   
+                <br/><br/><br/>             
+                <label><b>On-line:</b></label><br/><br/>
+                <label><a href="#">Chat On-line</a></label><br/>
+                <label><a href="#">Deficientes Auditivos</a></label><br/>
+                <label><a href="#">Perguntas Frequentes</a></label><br/>
+                <label><a href="#">Fale Conosco</a></label>
+            </div>
+            
+            <div id="conectar"> 
+                <br/>               
+                <label><b>SOCIAL</b></label><br/><br/>
+                <label><b>Conecte-se</b></label><br/><br/>
+                <img src="../imagens/social.png"/>                  
+            </div>
+            
+        </footer>
     </div>
-    
-    <div id="conectar">
-        <ul type="none">
-            <h4>SOCIAL</h4>
-                <h4>Conecte-se:</h4><br>
-            <img src="imagens/social.png"/>
-        </ul>
-    </div>   
-    
-</footer>        
 </body>    
 </html>    

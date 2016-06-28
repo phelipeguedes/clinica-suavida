@@ -2,10 +2,29 @@
 
 /* Cabeçalho: Menu e área de login */
 
-nav#menu{
-    display: block;
-    margin: -10px 0px 0px 200px;
+.container{
+    width: 100%;
+    margin: 20px auto;
+}
+
+body{
     font-family: candara;
+}
+
+div#interface{
+    width: 960px;
+    margin: -22px auto auto;
+}
+
+div#logo img{
+    margin-top: 10px;
+    margin-left: -70px;
+}
+
+nav#menu{
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
     font-size: 13pt;    
 }
 
@@ -35,38 +54,34 @@ a:visited{
     color: black;
 }
 
-img#logo{
-    margin: 10px 0px 0px 120px;
-}
 
 /* Container com os campos de usuário e senha */
 
-form#colaborador{
+fieldset#colaborador{
     width: 690px;
-    margin: -5px 10px 0px 350px;
-    font-family:candara;
+    margin: -1px auto;
     font-size: 9pt;
 }
 
-form#colaborador label{
+fieldset#colaborador label{
     float: left;
 }
 
-form#colaborador input{    
+fieldset#colaborador input{    
     padding: 5px;
 }
 
-form#colaborador input#senha{
+fieldset#colaborador input#senha{
     margin-left: 6px;
 }
 
-form#colaborador a{
+fieldset#colaborador a{
     color: red;
    padding:1px;
    margin-bottom: 23px;
 }
 
-form input#logar{
+fieldset input#logar{
     width: 70px;
     margin-left: 8px;
     border-radius: 2px;
@@ -74,12 +89,11 @@ form input#logar{
 
 .txtusuario{
     margin: 15px 0px 0px 20px;
+    width: 180px;
 }
 
 div#cadastro{
-    font-family: candara;
-    border-bottom: 1px darkgray solid;
-    
+    border-bottom: 1px darkgray solid;    
 }
 
 div#cadastro h4{

@@ -9,116 +9,120 @@
 </head>
 <body>
 
-    <!-- Cabeçalho: Menu e área de login -->
+	<div class="container">
+    <!-- Cabeçalho: Menu e campos de login -->
     
-	<div id="interface">
-		<header>
-			<nav id="menu">
+		<div id="interface">
+			<header>
+				<nav id="menu">
+					<ul>
+						<li><a href="../index.html">Home</a></li>
+						<li><a href="autenticacao.html">Marcar Consulta</a></li>
+						<li><a href="../guia-medico.html">Guia Médico</a></li>
+						<li><a href="../cadastro-medico/cadastrar-medico_login.html">Cadastrar Médico</a></li>
+						<li><a href="../cadastro-paciente/cadastrar-paciente_login.html">Cadastrar Paciente</a></li>
+						<li><a href="../marcacao-procedimentos/procedimentos.html">Procedimentos</a></li>
+					</ul>
+				</nav>
+				<div id="logo"><img src="../imagens/logo.jpg" id="logo"/></div>
+			</header>
+		</div>
+	    
+	    <!-- Subtítulo -->
+	    
+		<h4 id="agendamento">Agendamento</h4>
+		<hr>	
 
-				<ul>
-					<li><a href="../index.html">Home</a></li>
-					<li><a href="autenticacao.html">Marcar Consulta</a></li>
-					<li><a href="../guia-medico.html">Guia Médico</a></li>
-					<li><a href="../cadastro-medico/cadastrar-medico_login.html">Cadastrar Médico</a></li>
-					<li><a href="../cadastro-paciente/cadastrar-paciente_login.html">Cadastrar Paciente</a></li>
-					<li><a href="../marcacao-procedimentos/procedimentos.html">Procedimentos</a></li>
-				</ul>
-			</nav>
-			<img src="../imagens/logo.jpg" id="logo" />
-		</header>
-	</div>
-    
-    <!-- Subtítulo -->
-    
-	<h4 id="agendamento">Agendamento</h4>
-	<hr>	
+		<!-- Campos de cpf e senha para autenticação do usuário dentro do sistema. Se for válido, ele poderá marcar consultas -->
+	    
+	    <div id="corpo">
+	        <div id="marcar">
 
-	<!-- Campos de cpf e senha para autenticação do usuário dentro do sistema. Se for válido, ele poderá marcar consultas -->
-    
-    <span id="corpo">
-        <div id="marcar">
+	            <h4>MARCAÇÃO DE CONSULTAS - AUTENTICAÇÃO</h4>
+	            <p>Aqui você pode agendar sua consulta escolhendo a data, horário e o médico(a) de sua preferência.</p>
+	            <hr>
+	            
+	            <p>Para acessar o sistema de marcação informe o seu cpf e sua senha.</p>
 
-            <h4>MARCAÇÃO DE CONSULTAS - AUTENTICAÇÃO</h4>
-            <p>Aqui você pode agendar sua consulta escolhendo a data, horário e o médico(a) de sua preferência.</p>
-            <hr>
+	            <aside>            	
+	            	<a href="desmarcar-consulta.html"><input type="button" id="bt-desmarca" value="Desmarcar Consulta" onclick=" return validarLoginConsulta();" /></a>
+	            	<a href="pesquisar-consulta.html"><input type="button" id="bt-pesquisa" value="Pesquisar Consulta" onclick=" return validarLoginConsulta();" /></a>
+	            </aside>
+	            
+	            <form method="post" action="marcarconsulta.php">
+	                <label>CPF:</label><br/>
+	                <input type="text" name="cpf" id="cpf" class="txtconsulta" placeholder="somente números" required /><br/><br/>
+	                <label>SENHA:</label><br/>
+	                <input type="password" name="senha" id="senha" class="txtconsulta" placeholder="informe a sua senha" required /><br/><br/>
+	                <input type="submit" name="botao" id="botao" value="entrar" onclick="validarLoginConsulta();"/><input type="button" name="botao2" id="botao2" value="esqueci a senha"/>	                
+	            </form>
+	        </div>
+	    </div>
+
+		<!-- Rodapé presente em algumas páginas -->
+
+		<footer id="rodape">
+            <div id="institucional">
+                <br/>
+                <label><b>INSTITUCIONAL</b></label><br/><br/> 
+                <a href="#">Sobre a Clínica Sua Vida</a><br/><br/> 
+                <a href="#">Atendimento ao Cliente</a><br/><br/> 
+                <a href="#">Trabalhe Conosco</a>
+            </div>
+
+            <div id="onde">
+                <br/>
+                <label><b>ONDE ENCONTRAR</b></label><br/><br/> 
+                <label><b>Endereço 1:</b></label><br/><br/>
+                <label>Av. dos Cabritos, 500</label><br/>
+                <label>Centro - CEP:60150-500</label><br/>
+                <label>Fortaleza-CE</label>                
+            </div>
+
+            <div id="endereco2">
+                    <br/>
+                    <br/><br/>
+                    <label><b>Endereco 2:</b></label><br/><br/>
+                    <label>Av. Brasil, 600</label><br/>
+                    <label>Jardins - CEP:60700-310</label><br/>
+                    <label>Fortaleza-CE</label>
+            </div>
+
+            <div id="endereco3">
+                    <br/><br/><br/>
+                    <label><b>Endereco 3:</b></label><br/><br/>
+                    <label>Av. das Camélias, 700</label><br/>
+                    <label>Rosas - CEP:50780-220</label><br/>
+                    <label>Fortaleza-CE</label>
+            </div>
+
+            <div id="atendimento">
+                <br/>
+                <label><b>ATENDIMENTO</b></label><br/><br/> 
+                <label><b>Telefones p/ Contato:</b></label><br/><br/>
+                <label>(85)3030.4055</label><br/>
+                <label>(85)3030.5070</label><br/>
+                <label>(85)30304055</label>
+            </div>
+
+            <div id="online">   
+                <br/><br/><br/>             
+                <label><b>On-line:</b></label><br/><br/>
+                <label><a href="#">Chat On-line</a></label><br/>
+                <label><a href="#">Deficientes Auditivos</a></label><br/>
+                <label><a href="#">Perguntas Frequentes</a></label><br/>
+                <label><a href="#">Fale Conosco</a></label>
+            </div>
             
-            <p>Para acessar o sistema de marcação informe o seu cpf e sua senha.</p>
-
-            <aside>            	
-            	<a href="desmarcar-consulta.html"><input type="button" id="bt-desmarca" value="Desmarcar Consulta" onclick=" return validarLoginConsulta();" /></a>
-            	<a href="pesquisar-consulta.html"><input type="button" id="bt-pesquisa" value="Pesquisar Consulta" onclick=" return validarLoginConsulta();" /></a>
-            </aside>
+            <div id="conectar"> 
+                <br/>               
+                <label><b>SOCIAL</b></label><br/><br/>
+                <label><b>Conecte-se</b></label><br/><br/>
+                <img src="../imagens/social.png"/>                  
+            </div>
             
-            <form method="post" action="marcarconsulta.php">
-                <p> <label>CPF:</label> </p>
-                <p><input type="text" name="cpf" id="cpf" class="txtconsulta" placeholder="somente números" required /><br/></p>
-                <p><label>SENHA:</label></p>
-                <p><input type="password" name="senha" id="senha" class="txtconsulta" placeholder="informe a sua senha" required />    <p>
-                    <input type="submit" name="botao" id="botao" value="entrar" onclick="validarLoginConsulta();"/><input type="button" name="botao2" id="botao2" value="esqueci a senha" />
-                </p>
-            </form>
-        </div>
-    </span>
-
-	<!-- Rodapé presente em algumas páginas -->
-
-	<footer id="rodape">
-		<div id="institucional">
-			<h4>INSTITUCIONAL</h4>
-			<ul type="none">
-				<li><a href="#">Sobre a Clínica</a></li>
-				<li><a href="#">Atendimento ao Cliente</a></li>
-				<li><a href="#">Trabalhe Conosco</a></li>
-			</ul>
-		</div>
-
-		<div id="encontrar">
-			<h4>ONDE ENCONTRAR</h4>
-			<h4>Endereços:</h4>
-			<p>
-				Av. dos Cabritos, 500<br /> Centro - CEP: 60150-500<br />
-				Fortaleza-CE
-			</p>
-
-			<p id="endereco2">
-				Av. Brasil, 690<br /> Jardins - CEP: 60700-310<br /> Fortaleza-CE
-			</p>
-
-			<p id="endereco3">
-				Av. das Camélias, 1020<br /> Rosas - CEP: 60900-900 Fortaleza-CE
-			</p>
-		</div>
-
-		<div id="atendimento">
-			<ul type="none">
-				<h4>ATENDIMENTO</h4>
-				<h4>Telefones:</h4>
-				<li>(85)3030.4055 (Av. dos Cabritos)</li>
-				<br />
-				<li>(85)3030.5070 (Av. das Camélias)</li>
-				<br />
-				<li>(85)3030.4455 (Av. Brasil)</li>
-				<br />
-			</ul>
-			<ul type="none" class="online">
-				<h4>On-line:</h4>
-				<li><a href="#">Chat On-line</a></li>
-				<li><a href="#">Deficientes Auditivos</a></li>
-				<li><a href="#">Perguntas Frequentes</a></li>
-				<li><a href="#">Fale Conosco</a></li>
-			</ul>
-		</div>
-
-		<div id="conectar">
-			<ul type="none">
-				<h4>SOCIAL</h4>
-				<h4>Conecte-se:</h4>
-				<br>
-				<img src="../imagens/social.png" />
-			</ul>
-		</div>
-
-	</footer>
+        </footer>
+	</div>	
 
 </body>
 </html>
