@@ -2,6 +2,7 @@
 
 .container{
     width: 100%;
+    height: 100%;
     margin: 20px auto;
 }
 
@@ -77,7 +78,7 @@ div#marcar{
     background-color: black;
     width: 900px;
     height: 400px;
-    margin: 50px auto;
+    margin: 100px auto;
     padding: 10px 0px 0px 25px;
     font-family: sans-serif;    
     background: url('../imagens/calendario.png')no-repeat 95% 95%;
@@ -91,6 +92,8 @@ div#corpo{
     background: url:('../imagens/bg1.jpg');
     margin-left: auto;
     margin-right: auto;
+    display: block;
+
 }
 
 /* Classe para os inputs de cpf e senha */
