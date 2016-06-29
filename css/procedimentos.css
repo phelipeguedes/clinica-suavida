@@ -101,6 +101,7 @@ p#secao{
 }
 
 img#exames{
+    padding-top: 20px;
     margin-left: auto;
     margin-right: auto;
     display: block;
@@ -115,8 +116,8 @@ div#container_procedimentos{
 /* Cada ul contém informações sobre o procedimento selecionado */
 
 ul#procedimentos{
-    width: 700px;
-    margin: -10px auto 0px 300px;
+    width: 600px;
+    margin: -10px auto;
     padding: 50px;
     overflow: hidden;
     list-style: none;
