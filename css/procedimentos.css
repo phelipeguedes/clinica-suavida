@@ -144,75 +144,83 @@ ul#procedimentos a:hover{
 
 /* Conteiner dos procedimentos */
 
-ul#procedimentos li#foto01{
+ul#procedimentos li#img01{
     background: url('../imagens/biopsia.jpg')no-repeat 55% 60%;
 }
 
-ul#procedimentos li#foto02{
+ul#procedimentos li#img02{
     background: url('../imagens/botox.jpg')no-repeat 20% 50%;
 }
 
-ul#procedimentos li#foto03{
+ul#procedimentos li#img03{
     background: url('../imagens/dessind_ossea.jpg')no-repeat;
 }
 
-ul#procedimentos li#foto04{
+ul#procedimentos li#img04{
     background: url('../imagens/dopler.jpg')no-repeat 50% 70%;
 }
 
-ul#procedimentos li#foto05{
+ul#procedimentos li#img05{
     background: url('../imagens/ecocardiografia.jpg')40% 50% no-repeat;
 }
 
-ul#procedimentos li#foto06{
+ul#procedimentos li#img06{
     background: url('../imagens/eletro.jpg') 30% 20% no-repeat;
 }
 
-ul#procedimentos li#foto07{
+ul#procedimentos li#img07{
     background: url('../imagens/eletroencefalograma.jpg')30% 40% no-repeat;
 }
 
-ul#procedimentos li#foto08{
+ul#procedimentos li#img08{
     background: url('../imagens/endoscopia.jpg')no-repeat 40% 60%;
 }
 
-ul#procedimentos li#foto09{
+ul#procedimentos li#img09{
     background: url('../imagens/exames_laboratoriais2.jpg')no-repeat;
 }
 
-ul#procedimentos li#foto10{
-    background: url('../imagens/impressao3d.png')no-repeat;
+ul#procedimentos li#img10{
+    background: url('../imagens/hormonal.jpg') 50% 30% no-repeat;
 }
 
-ul#procedimentos li#foto11{
-    background: url('../imagens/mamografia.jpg') 30% 40% no-repeat;
+ul#procedimentos li#img11{
+    background: url('../imagens/impressao3d.png') 30% 40% no-repeat;
 }
 
-ul#procedimentos li#foto12{
+ul#procedimentos li#img12{
+    background: url('../imagens/mamografia.jpg')no-repeat 20% 45%;
+}
+
+ul#procedimentos li#img13{
     background: url('../imagens/peeling.jpg')no-repeat;
 }
 
-ul#procedimentos li#foto13{
+ul#procedimentos li#img14{
+    background: url('../imagens/puncao.png')no-repeat 40% 50%;
+}
+
+ul#procedimentos li#img15{
     background: url('../imagens/raiox_3d.png')no-repeat;
 }
 
-ul#procedimentos li#foto14{
-    background: url('../imagens/tomografia2.jpg')no-repeat;
-}
-
-ul#procedimentos li#foto15{
+ul#procedimentos li#img16{
     background: url('../imagens/ressonancia.jpg')no-repeat;
 }
 
-ul#procedimentos li#foto16{
+ul#procedimentos li#img17{
+    background: url('../imagens/tomografia.jpg')no-repeat;
+}
+
+ul#procedimentos li#img18{
     background: url('../imagens/ultrassonografia.jpg')no-repeat;
 }
 
-ul#procedimentos span{
+ul#procedimentos span.fonte_branca a{
     color: white;
 }
 
-ul#procedimentos span.fonte_preta{
+ul#procedimentos span.fonte_preta a{
     color: black;
 }
 

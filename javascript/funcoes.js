@@ -73,13 +73,13 @@ function entrarCadPaciente(){
     alert("ATENÇÃO! Somente colaboradores são autorizados para cadastrar pacientes.");
 }
 
-function abrirPopUp(URL){
-    var width = 300;
-    var height= 300;
-    var left = 99;
-    var top = 99;
+/* Abrir janela popup */
 
-    window.open(URL, 'janela', 'width=' +width+ ', height='+height+', top='+top+', left='+left+', scrollbars=yes, status=no, tollbar=no, location=no, menubar=no, resizable=no, fullscreen=no');
+function abrirPopUp(URL){
+
+    //Parâmetros passados: url do popup, nome da janela, tamanhos de altura e largura e o atributo para não exibir a barra na janela
+    window.open(URL, 'popup', "width=400, height=300, scrollbar=no");
+
 }
 
 
